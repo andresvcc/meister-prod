@@ -46,7 +46,7 @@ const OrderTableProvider = memo(({ orders }) => {
           <Hidden mdDown>
             <GridItem num={[true, true, true, 2, 2]} zeroMinWidth>
               <Div width="100%" height="100px" style={{ position: 'relative' }}>
-                <Image quality={5} priority src={product.photo} layout="fill" objectFit="cover" />
+                <Image quality={5} priority src={product.photo ?? '/static/images/notPhoto.png'} layout="fill" objectFit="cover" />
               </Div>
             </GridItem>
           </Hidden>

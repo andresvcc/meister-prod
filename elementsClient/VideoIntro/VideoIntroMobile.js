@@ -131,7 +131,7 @@ export default function VideoIntro({ parallaxVideo, parallaxImage }) {
 
   return (
     <>
-      <Div style={{ background: 'black', marginTop: '65px' }} {...grid}>
+      <Div style={{ background: 'black', marginTop: '55px' }} {...grid}>
         {
           loading ? (
             <Div {...loadingProps} vertical="bottom">

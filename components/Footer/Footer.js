@@ -80,7 +80,7 @@ function Footer() {
               <GridItem num={[4, 4, 4, 4, 4]}>
                 <Div width="200px" height="80px">
                   <LinkToOutside link="https://www.meister-engineering.com/press_bmw_motorrad">
-                    <Image src={imagine1} alt="..." width="200px" height="90px" />
+                    <Image src={imagine1 ?? '/static/images/notPhoto.png'} alt="..." width="200px" height="90px" />
                   </LinkToOutside>
                 </Div>
 
@@ -88,7 +88,7 @@ function Footer() {
               <GridItem num={[4, 4, 4, 4, 4]}>
                 <Div width="170px" height="80px">
                   <LinkToOutside link="https://bikeshedmoto.com/blogs/blog/meister-engineering-r80-gs-geneva-dakar?_pos=1&_sid=a23c9a58c&_ss=r">
-                    <Image src={imagine2} alt="..." width="150px" height="90px" />
+                    <Image src={imagine2 ?? '/static/images/notPhoto.png'} alt="..." width="150px" height="90px" />
                   </LinkToOutside>
                 </Div>
               </GridItem>
@@ -96,7 +96,7 @@ function Footer() {
               <GridItem num={[4, 4, 4, 4, 4]}>
                 <Div width="170px" height="80px">
                   <LinkToOutside link="https://www.bikeexif.com/custom-bikes-week-25">
-                    <Image src={imagine3} alt="..." width="130px" height="90px" />
+                    <Image src={imagine3 ?? '/static/images/notPhoto.png'} alt="..." width="130px" height="90px" />
                   </LinkToOutside>
                 </Div>
               </GridItem>
@@ -135,13 +135,13 @@ function Footer() {
               <Spam type="heading1">FOLLOW US</Spam>
               <Div row height={70} width={['100px', '100px', '60%', '50%', '40%']} horizontal="at">
                 <LinkToOutside link="https://www.instagram.com/meisterengineering/?hl=fr">
-                  <Image src={imagine5} alt="..." height="30px" width="30px" />
+                  <Image src={imagine5 ?? '/static/images/notPhoto.png'} alt="..." height="30px" width="30px" />
                 </LinkToOutside>
                 <LinkToOutside link="https://www.facebook.com/meisterengineering/">
-                  <Image src={imagine6} alt="..." height="30px" width="30px" />
+                  <Image src={imagine6 ?? '/static/images/notPhoto.png'} alt="..." height="30px" width="30px" />
                 </LinkToOutside>
                 <LinkToOutside link="https://www.linkedin.com/in/antoine-meister-2596a3136/?originalSubdomain=ch">
-                  <Image src={imagine4} alt="..." height="30px" width="30px" />
+                  <Image src={imagine4 ?? '/static/images/notPhoto.png'} alt="..." height="30px" width="30px" />
                 </LinkToOutside>
               </Div>
             </Div>

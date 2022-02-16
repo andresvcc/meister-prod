@@ -152,7 +152,7 @@ function FormDialog5(props) {
                   ))}
                 </div>
                 <Div style={{ position: 'absolute', top: 174, right: 100 }}>
-                  <Image src={imagine3} alt="..." width="400px" height="300px" />
+                  <Image src={imagine3 ?? '/static/images/notPhoto.png'} alt="..." width="400px" height="300px" />
                 </Div>
                 <div className={classes.cropContainer}>
                   <Cropper

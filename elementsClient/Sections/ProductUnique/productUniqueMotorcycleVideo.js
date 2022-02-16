@@ -421,7 +421,7 @@ const ProductUnique = (props) => {
                     </Spam>
                   </Div>
                   <img
-                    src={product.colors[0].photos[0]}
+                    src={product?.colors[0]?.photos[0] ?? ''}
                     alt="fd"
                     width="150px"
                     height="250px"
@@ -534,7 +534,7 @@ const ProductUnique = (props) => {
         </div>
       </Div>
 
-      <Div width="100%" style={{ marginBottom: '10px', marginTop: '50px' }}>
+      <Div width={['90%', '90%', '90%', '100%', '100%']} style={{ marginBottom: '10px', marginTop: '50px' }}>
         <GridContainer spacing={0}>
           <EditorChampMotorcycle
             value={languages[selectLangue]}
@@ -543,11 +543,11 @@ const ProductUnique = (props) => {
         </GridContainer>
       </Div>
 
-      <Div width="100%">
+      <Div width={['90%', '90%', '90%', '100%', '100%']}>
         <GridContainer spacing={2}>
-          <GridItem num={[4, 4, 4, 4, 4]}>
+          <GridItem num={['auto', 'auto', 4, 4, 4]}>
             <Div width="100%" horizontal="left" style={{ paddingLeft: '20px', padding: '10px' }}>
-              <Div width="100%" horizontal="left" height="330px" vertical="at">
+              <Div width="100%" horizontal="left" height={['auto', 'auto', 'auto', '330px', '330px']} vertical="at">
 
                 <Div width="100%" horizontal="left" style={{ marginBottom: '10px' }}>
                   <Div width="90%" horizontal="left" style={{ textAlign: 'justify' }}>
@@ -564,8 +564,32 @@ const ProductUnique = (props) => {
                   </Div>
                 </Div>
 
+                <Div width={['100%', '100%', '0%', '0%', '0%']}>
+                  <Div width="100%" horizontal="center" row>
+                    <Div width="100%" horizontal="center" row style={{ padding: '10px' }}>
+                      {
+                        photos.length > 1 ? (
+                          <Div onClick={backPhoto}>
+                            <ArrowBack />
+                          </Div>
+                        ) : null
+                      }
+                      <Div onClick={() => setDialog(true)} width="100%" height={['50vw', '50vw', '0px', '0px', '0px']} horizontal="right">
+                        <img src={`${selectColor && selectColor.photos && selectColor.photos[0] ? selectColor.photos[currentPhoto] : ''}`} alt="MotorCycle photos" style={{ width: '100%', height: '480px', objectFit: 'contain' }} />
+                      </Div>
+                      {
+                          photos.length > 1 ? (
+                            <Div onClick={forwardPhoto}>
+                              <ArrowForward />
+                            </Div>
+                          ) : null
+                      }
+                    </Div>
+                  </Div>
+                </Div>
+
                 <Div width="100%" horizontal="left" style={{ marginBottom: '20px' }}>
-                  <Div width="90%" horizontal="left" style={{ textAlign: 'justify' }}>
+                  <Div width={['100%', '100%', '100%', '100%', '100%']} horizontal="left" style={{ textAlign: 'justify' }}>
                     <Editor
                       toolbarHidden
                       superFancyBlockquote
@@ -586,21 +610,29 @@ const ProductUnique = (props) => {
                     {` ${currency} ${price}`}
                   </Spam>
 
-                  <LazyDialog onClick={handleClickopenD('body')} notAcept title="Gallery" icon={<span>ALL THE DETAILS</span>} icon2={<span>ORDER THIS MOTORCYCLE</span>} maxWidth="lg" btProps={{ color: 'google', justIcon: false }} btProps2={{ color: 'primary', justIcon: false }}>
-                    <Div width="100%" height="480px" horizontal="at" vertical="top" style={{ padding: '10px', marginBottom: '20px' }} row>
-                      <Div width="60%" dev>
-                        sdf
+                  <Button color="primary" onClick={handleClickopenD('body')} style={{ fontSize: '16px' }}>
+                    ORDER THIS MOTORCYCLE
+                  </Button>
+
+                  {/*
+
+                    <LazyDialog onClick={handleClickopenD('body')} notAcept title="Gallery" icon={<span>ALL THE DETAILS</span>} icon2={<span>ORDER THIS MOTORCYCLE</span>} maxWidth="lg" btProps={{ color: 'google', justIcon: false }} btProps2={{ color: 'primary', justIcon: false }}>
+                      <Div width="100%" height="480px" horizontal="at" vertical="top" style={{ padding: '10px', marginBottom: '20px' }} row>
+                        <Div width="60%" dev>
+                          sdf
+                        </Div>
+                        <Div width="40%" dev>
+                          sdfg
+                        </Div>
                       </Div>
-                      <Div width="40%" dev>
-                        sdfg
-                      </Div>
-                    </Div>
-                  </LazyDialog>
+                    </LazyDialog>
+
+                  */}
                 </Div>
               </Div>
             </Div>
           </GridItem>
-          <GridItem num={[8, 8, 8, 8, 8]}>
+          <GridItem num={['auto', 'auto', 8, 8, 8]}>
             <ThemeProvider theme={theme}>
               <Dialog
                 fullWidth
@@ -634,7 +666,7 @@ const ProductUnique = (props) => {
                 </Div>
               </Dialog>
             </ThemeProvider>
-            <Div width="100%" horizontal="right" row>
+            <Div width={['0%', '0%', '100%', '100%', '100%']} horizontal="right" row>
               <Div width="75%" horizontal="right" row style={{ padding: '10px' }}>
                 {
                   photos.length > 1 ? (
@@ -643,7 +675,7 @@ const ProductUnique = (props) => {
                     </Div>
                   ) : null
                 }
-                <Div onClick={() => setDialog(true)} width="100%" height="350px" horizontal="right">
+                <Div onClick={() => setDialog(true)} width="100%" height={['0px', '0px', '350px', '350px', '350px']} horizontal="right">
                   <img src={`${selectColor && selectColor.photos && selectColor.photos[0] ? selectColor.photos[currentPhoto] : ''}`} alt="MotorCycle photos" style={{ width: '100%', height: '480px', objectFit: 'contain' }} />
                 </Div>
                 {
@@ -675,7 +707,7 @@ const ProductUnique = (props) => {
                     gallery[0] ? (
                       <GridItem num={[12, 12, 12, 12, 12]}>
                         <DialogGallery photos={gallery} current={0} theme={theme} classes={classes}>
-                          <Div width="100%" height="550px" style={{ border: '2px solid #ababab20' }} pointer>
+                          <Div width="100%" height={['50vw', '50vw', '550px', '550px', '550px']} style={{ border: '2px solid #ababab20' }} pointer>
                             <Div
                               pointer
                               width="80%"
@@ -696,7 +728,7 @@ const ProductUnique = (props) => {
                     gallery[1] ? (
                       <GridItem num={[6, 6, 6, 6, 6]}>
                         <DialogGallery photos={gallery} current={1} theme={theme} classes={classes}>
-                          <Div width="100%" height="550px" style={{ border: '2px solid #ababab20' }} pointer>
+                          <Div width="100%" height={['50vw', '50vw', '550px', '550px', '550px']} style={{ border: '2px solid #ababab20' }} pointer>
                             <Div
                               pointer
                               width="90%"
@@ -718,7 +750,7 @@ const ProductUnique = (props) => {
                     gallery[2] ? (
                       <GridItem num={[6, 6, 6, 6, 6]}>
                         <DialogGallery photos={gallery} current={2} theme={theme} classes={classes}>
-                          <Div width="100%" height="550px" style={{ border: '2px solid #ababab20' }} pointer>
+                          <Div width="100%" height={['50vw', '50vw', '550px', '550px', '550px']} style={{ border: '2px solid #ababab20' }} pointer>
                             <Div
                               pointer
                               width="90%"
@@ -738,18 +770,19 @@ const ProductUnique = (props) => {
                   }
                   {
                     [...gallery].slice(3).map((photo, i) => (
-                      <GridItem num={[3, 3, 3, 3, 3]} key={photo}>
+                      <GridItem num={[6, 6, 4, 4, 4]} key={photo}>
                         <DialogGallery photos={gallery} current={i} theme={theme} classes={classes}>
-                          <Div width="100%" height="200px" style={{ border: '2px solid #ababab20' }} pointer>
+                          <Div width="100%" height={['50vw', '50vw', '300px', '350px', '350px']} style={{ border: '2px solid #ababab20' }} pointer>
                             <Div
                               pointer
-                              width="100%"
-                              height="200px"
+                              width={['90%', '90%', '100%', '100%', '100%']}
+                              height={['100%', '100%', '200px', '200px', '200px']}
                               style={{
                                 backgroundImage: `url(${photo.replaceAll(' ', '%20')})`,
-                                backgroundSize: 'cover',
+                                backgroundSize: 'contain',
                                 backgroundRepeat: 'no-repeat',
-                                backgroundPositionY: '55%',
+                                backgroundPositionY: '50%',
+                                backgroundPositionX: '50%',
                               }}
                             />
                           </Div>

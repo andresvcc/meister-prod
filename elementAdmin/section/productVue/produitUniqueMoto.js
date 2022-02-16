@@ -22,8 +22,6 @@ import EditIcon from '@material-ui/icons/Edit';
 import TextField from '@material-ui/core/TextField';
 import Divider from '@material-ui/core/Divider';
 
-import Image from 'next/image';
-
 import {
   deviceType, browserName
 } from 'react-device-detect';
@@ -489,6 +487,8 @@ const ProductUnique = ({ product, setProductData }) => {
                     {` ${currency} ${price}`}
                   </Span>
 
+                  {/*
+
                   <LazyDialog notAcept title="Gallery" icon={<span>ALL THE DETAILS</span>} maxWidth="lg" btProps={{ color: 'google', justIcon: false }}>
                     <Div width="100%" height="480px" horizontal="at" vertical="top" style={{ padding: '10px', marginBottom: '20px' }} row>
                       <Div width="60%" dev>
@@ -499,6 +499,8 @@ const ProductUnique = ({ product, setProductData }) => {
                       </Div>
                     </Div>
                   </LazyDialog>
+
+                  */}
 
                 </Div>
               </Div>

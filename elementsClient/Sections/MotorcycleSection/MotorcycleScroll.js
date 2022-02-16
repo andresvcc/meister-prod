@@ -32,7 +32,7 @@ const Scroll = memo(({
   }
 
   return (
-    <Div width="100%">
+    <Div width="100%" >
       <Carousel currentSubCategories={currentSubCategories} filter={filter} hanldeClick={hanldeClick} />
     </Div>
   );

@@ -38,7 +38,7 @@ const SocialButton = (props) => {
     <Div width={['300px', '380px', '420px', '420px', '420px']} height="55px" style={{ borderRadius: '5px', border: '1px solid #00000050', backgroundColor: 'white' }}>
       <Div width="90%" height="90%" row horizontal="left">
         <Div width="20%">
-          <Image src={image} alt="..." height="30px" width="30px" className="iconRound" />
+          <Image src={image ?? '/static/images/notPhoto.png'} alt="..." height="30px" width="30px" className="iconRound" />
         </Div>
         <Div width="60%" style={{ fontSize: '14px' }}>
           {title}

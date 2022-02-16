@@ -33,7 +33,7 @@ function Page(props) {
           <GridItem num={[12, 12, 12, 12, 12]}>
             <Div width="100%" horizontal="left" row style={{ paddingTop: '10px' }}>
               <Div width="15%">
-                <Image src={image} alt="..." height="90px" width="140px" />
+                <Image src={image ?? '/static/images/notPhoto.png'} alt="..." height="90px" width="140px" />
               </Div>
               <Div width="15%">
                 <Spam type="serifTitleBold">

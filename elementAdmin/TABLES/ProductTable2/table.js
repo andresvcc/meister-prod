@@ -1225,7 +1225,7 @@ export default function DemoTables({
                       </Button>
 
                       <Button color="white" disabled={index[0] === 0} onClick={backIndex}>
-                        Back
+                      Back
                       </Button>
 
                       <Div row style={{ marginLeft: '10px', marginRight: '10px', padding: '10px 10px 10px 10px' }}>

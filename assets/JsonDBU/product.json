@@ -9583,8 +9583,8 @@
     },
     "languages": {
       "EN": {
-        "nameProduct": "RX-100",
-        "description": "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions,",
+        "nameProduct": "BMW K100",
+        "description": "",
         "details": [],
         "greatDescription": "",
         "specialCare": "",
@@ -9595,19 +9595,14 @@
               "blocks": [
                 {
                   "key": "8i51m",
-                  "text": "Qu'est-ce que le Lorem Ipsum?",
+                  "text": "BMW k100 - Aluminium",
                   "type": "header-four",
                   "depth": 0,
                   "inlineStyleRanges": [
                     {
                       "offset": 0,
-                      "length": 29,
+                      "length": 20,
                       "style": "BOLD"
-                    },
-                    {
-                      "offset": 0,
-                      "length": 29,
-                      "style": "ITALIC"
                     }
                   ],
                   "entityRanges": [],
@@ -9624,14 +9619,57 @@
                 },
                 {
                   "key": "5h7b1",
-                  "text": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.",
+                  "text": "Marking BMW's entrance into the multi-cylinder market in 1985, the longitudinal mounted three and four-cylinder K75, and K100 series had a decade-long run. Called the 'Flying Brick' due to their unconventional engine layout, these bikes are now established donors for café racer conversions.",
                   "type": "unstyled",
                   "depth": 0,
                   "inlineStyleRanges": [],
                   "entityRanges": [],
-                  "data": {
-                    "text-align": "justify"
-                  }
+                  "data": {}
+                },
+                {
+                  "key": "8o7is",
+                  "text": "\nAn increased number of customers asked us if we could build a customized K. And we wanted to go much further than a skin-deep face-lift. We decided that serious modification of the suspension would give the aging K a dramatic, edgy look. It would also give it a 21st-century handling-boost. At this point, we had the\ngood fortune to discover Retrorides. The custom bike builder from Brazil was working on such a conversion.\n",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                },
+                {
+                  "key": "ba604",
+                  "text": "Retrorides had spent many months wrestling with CAD software and CNC machines getting the measurements and specifications of the conversion right. The result is a sculpted single-sided, billet aluminum suspension system that holds a parallel shock absorber.\n",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                },
+                {
+                  "key": "c5s21",
+                  "text": "The aircraft-grade aluminum parts arrived at Meister Engineering, and work began on the extensive subframe modifications and assembly.",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                },
+                {
+                  "key": "4b1t6",
+                  "text": "",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                },
+                {
+                  "key": "dru8v",
+                  "text": "Believe it or not, this was the easy part. From there, we then went through the painstaking process of getting the finished product to pass Swiss Type Approval.",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
                 }
               ],
               "entityMap": {}
@@ -9643,7 +9681,7 @@
           "blocks": [
             {
               "key": "h7tb",
-              "text": "RX-100",
+              "text": "BMW K100",
               "type": "unstyled",
               "depth": 0,
               "inlineStyleRanges": [],
@@ -9657,7 +9695,7 @@
           "blocks": [
             {
               "key": "h7tb",
-              "text": "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions,",
+              "text": "",
               "type": "unstyled",
               "depth": 0,
               "inlineStyleRanges": [],
@@ -9704,7 +9742,7 @@
     "selectableOptions1": "",
     "selectableOptions2": "",
     "selectableOptions3": "",
-    "price": "30000",
+    "price": "39000",
     "currency": "CHF",
     "delivery": [],
     "packageSize": "parcel_100x60x60_4kg",

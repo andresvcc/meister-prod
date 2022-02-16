@@ -264,5 +264,76 @@
       "marketing": {},
       "orders": {}
     }
+  },
+  "kzq0f8l9b*k+im8çc)rm": {
+    "age": "2022-02-16T20:31:35.229Z",
+    "ageUpdate": "2022-02-16T21:57:21.930Z",
+    "sessions": [
+      "NKV5Oek8gzqtv2pPAAAJ"
+    ],
+    "login": "10223802746808348facebook"
+  },
+  "kzq0hnbufçjdh-shbp05": {
+    "age": "2022-02-16T20:33:27.642Z",
+    "ageUpdate": "2022-02-16T21:57:36.556Z",
+    "sessions": [
+      "EAa9B3NM4mhO6WihAAAL"
+    ],
+    "profilInfo": {
+      "currency": "CHF",
+      "language": "EN",
+      "countryTVA": "CH",
+      "tva": 0.077,
+      "registered": false,
+      "cartItems": {},
+      "addresses": {},
+      "billings": {},
+      "favorite": {},
+      "viewed": {},
+      "marketing": {},
+      "orders": {}
+    }
+  },
+  "kzq28m51d)z*açiwaro": {
+    "age": "2022-02-16T21:22:25.430Z",
+    "ageUpdate": "2022-02-16T21:58:12.123Z",
+    "sessions": [
+      "d_N6OIeelQrpCz5uAAAR"
+    ],
+    "profilInfo": {
+      "currency": "USD",
+      "language": "EN",
+      "countryTVA": "CH",
+      "tva": 0.077,
+      "registered": false,
+      "cartItems": {},
+      "addresses": {},
+      "billings": {},
+      "favorite": {},
+      "viewed": {},
+      "marketing": {},
+      "orders": {}
+    }
+  },
+  "kzq2ad3bhsg?h52_1?6m": {
+    "age": "2022-02-16T21:23:47.015Z",
+    "ageUpdate": "2022-02-16T21:32:49.566Z",
+    "sessions": [
+      "sFBrJsF0qBPQzXKAAABN"
+    ],
+    "profilInfo": {
+      "currency": "USD",
+      "language": "EN",
+      "countryTVA": "CH",
+      "tva": 0.077,
+      "registered": false,
+      "cartItems": {},
+      "addresses": {},
+      "billings": {},
+      "favorite": {},
+      "viewed": {},
+      "marketing": {},
+      "orders": {}
+    }
   }
 }

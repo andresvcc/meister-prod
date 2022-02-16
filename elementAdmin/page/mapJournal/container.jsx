@@ -45,7 +45,7 @@ const CardElement = ({
     <div>
       <Div width="100%">
         <Div height={`${widthBox + 120}px`} width="100%" style={{ cursor: 'move', position: 'relative' }}>
-          <Image src={element.photo} alt="s " className="boxCardImage" layout="fill" quality={100} placeholder={() => <div style={{ width: '100%', height: '250px', background: 'grey' }}>Loading...</div>} />
+          <Image src={element.photo ?? '/static/images/notPhoto.png'} alt="s " className="boxCardImage" layout="fill" quality={100} placeholder={() => <div style={{ width: '100%', height: '250px', background: 'grey' }}>Loading...</div>} />
         </Div>
 
         <Div

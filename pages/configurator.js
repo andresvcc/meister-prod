@@ -5,6 +5,7 @@ import { redux, Div, hookDeviceInfo } from 'components';
 import Iframe from 'react-iframe';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import Layout from '@/layouts/Default2';
 
 function Page(props) {
@@ -12,14 +13,9 @@ function Page(props) {
   const [emit, socket] = useSocketHook;
   const { height, type } = hookDeviceInfo();
   const [{ profilInfo }, dispatch] = redux();
-
-  return (
-    <Div width="100%" style={{ minHeight: `${height * 0.90}px`, background: 'white' }} vertical="top">
-      <Div height={type === 'mobile' ? 80 : 150} />
-      <Div
-        width="100%"
-      >
-        <Iframe
+  const imagine2 = '/static/images/MotoCategorie/Motorcycle_Custom.png';
+  /*
+    <Iframe
           url="https://webgl.tailora.fr/demo/"
           width="100%"
           height={`${type === 'mobile' ? height * 0.79 : height * 0.70}px`}
@@ -28,6 +24,33 @@ function Page(props) {
           display="initial"
           position="relative"
         />
+        */
+
+  return (
+    <Div width="100%" style={{ minHeight: `${height * 0.70}px`, background: 'white' }} vertical="top">
+      <Div height={type === 'mobile' ? 80 : 150} />
+      <Div
+        width="100%"
+      >
+        <Div
+          width="100%"
+          style={{ fontFamily: 'Georgia', fontSize: '18px' }}
+        >
+          Coming soon:
+
+        </Div>
+
+        <Div
+          width="100%"
+          style={{ fontFamily: 'Georgia', fontSize: '18px' }}
+        >
+          Design your future meister Motorcycle here!
+
+        </Div>
+        <Div width="500px" height="370px">
+          <Image src={imagine2 ?? '/static/images/notPhoto.png'} alt="..." width="600px" height="370px" />
+        </Div>
+
       </Div>
     </Div>
   );

@@ -95,7 +95,7 @@ const TextSection = () => {
 
 function HomePub() {
   return (
-    <Div width="100%" height={['300px', '400px', '380px', '380px', '350px']} style={{ background: 'white' }} vertical="bottom" >
+    <Div width="100%" height={['300px', '400px', '380px', '380px', '350px']} style={{ background: 'white' }} vertical="bottom">
 
       <GridContainer spacing={3}>
 
@@ -105,7 +105,7 @@ function HomePub() {
 
         <GridItem num={[12, 6, 6, 6, 6]}>
           <Div width="100%" height={['0px', '250px', '380px', '380px', '380px']}>
-            <Image src={imagine1} alt="..." className="imageobjectFit" />
+            <Image src={imagine1 ?? '/static/images/notPhoto.png'} alt="..." className="imageobjectFit" />
           </Div>
         </GridItem>
 

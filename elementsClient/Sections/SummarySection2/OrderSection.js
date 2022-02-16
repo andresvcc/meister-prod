@@ -105,7 +105,7 @@ export default function BagCardDialog({ marginInside }) {
           <Div height="50px" width={['80%', '50%', '50%', '40%', '40%']} row>
             {PaymentsCards.map((val, i) => (
               <Div width="95%" key={`${i + 1}`} horizontal="left" style={{ paddingLeft: '5px' }}>
-                <Image src={val.img} alt="" height="30px" width="50px" />
+                <Image src={val.img ?? '/static/images/notPhoto.png'} alt="" height="30px" width="50px" />
               </Div>
             ))}
           </Div>

@@ -53,6 +53,6 @@ module.exports = withPlugins([
   },
   env: {
     ROOT: __dirname,
-    NEXT_PUBLIC_GOOGLE_ANALYTICS: 'G-GHLL3KNCLK',
+    NEXT_PUBLIC_GOOGLE_ANALYTICS: 'G-DJ6Q9WZ60R',
   }
 });

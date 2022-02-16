@@ -43,7 +43,7 @@ setHover(newHover);
               onClick={() => (currentSlide <= 0 ? false : setCurrentSlide(currentSlide - 1))}
               style={{
                 position: 'absolute',
-                top: hookWidth > 600 ? '250px' : '220px',
+                top: hookWidth > 600 ? '350px' : '300px',
                 left: `${(hookWidth / 2.0) - (widhtMArg / 2)}px`,
                 zIndex: 9,
                 width: '1px',
@@ -61,7 +61,7 @@ setHover(newHover);
                 position: 'absolute',
                 right: `${(hookWidth / 2.02) - (widhtMArg / 2)}px`,
                 zIndex: 9,
-                top: hookWidth > 600 ? '250px' : '220px',
+                top: hookWidth > 600 ? '350px' : '300px',
                 width: '1px',
                 background: 'transparent'
               }}
@@ -100,7 +100,7 @@ currentSubCategories.map((val, i) => (
         {hover[val.categoryName] ? (
           <Div pointer width="100%" height="100%" style={{ zIndex: '2', background: '#00000010' }}>
             <Image
-              src={val.img}
+              src={val.img ?? '/static/images/notPhoto.png'}
               alt="..."
               width="250%"
               height="250%"
@@ -123,7 +123,7 @@ filter.subcategorie === val.categoryName ? (
         ) : (
           <Div>
             <Image
-              src={val.img}
+              src={val.img ?? '/static/images/notPhoto.png'}
               alt="..."
               width="250%"
               height="250%"

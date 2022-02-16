@@ -32,7 +32,7 @@ export default function MotorcycleCard(props) {
 
           <Div>
             <a href="#pablo" onClick={(e) => e.preventDefault()}>
-              <Image src={(motorcycle.colors[0].photos[0])} alt="..." width="350px" height="250px" className={classes.photoProductMotorcycle} />
+              <Image src={(motorcycle?.colors[0]?.photos[0]) ?? '/static/images/notPhoto.png'} alt="..." width="350px" height="250px" className={classes.photoProductMotorcycle} />
             </a>
           </Div>
 
