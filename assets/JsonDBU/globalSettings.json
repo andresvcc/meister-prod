@@ -1,0 +1,554 @@
+{
+  "seo": {
+    "index": {
+      "title": "Home",
+      "description": "page home de meister de test",
+      "firstTitle": "home page",
+      "links": [
+        "/Pilot",
+        "/Parts",
+        "/",
+        "/Motorcycle",
+        "/configurator",
+        "/certifications",
+        "/journal"
+      ]
+    },
+    "journal": {
+      "title": "The Journal",
+      "description": "The journal of Meister-Engineering Motorcycle. All the news concerning Meister.",
+      "firstTitle": "Journal of Meister-Engineering",
+      "links": [
+        "/Pilot",
+        "/Parts",
+        "/",
+        "/Motorcycle",
+        "/configurator",
+        "/certifications",
+        "/journal"
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "description": "The page of Certifications for parts - Meister-Engineering",
+      "firstTitle": "Certifications of Meister-Engineering",
+      "links": [
+        "/Pilot",
+        "/Parts",
+        "/",
+        "/Motorcycle",
+        "/configurator",
+        "/certifications",
+        "/journal"
+      ]
+    },
+    "configurator": {
+      "title": "The Configurator",
+      "description": "Meister-Engineering s Motorcycle configurator",
+      "firstTitle": "Configurator Meister-Engineering",
+      "links": [
+        "/Pilot",
+        "/Parts",
+        "/",
+        "/Motorcycle",
+        "/configurator",
+        "/certifications",
+        "/journal"
+      ]
+    },
+    "motorcycles": {
+      "title": "Motorcycles",
+      "description": "Meister-Engineering Motorcycles",
+      "firstTitle": "Motorcycles",
+      "links": [
+        "/Pilot",
+        "/Parts",
+        "/",
+        "/Motorcycle",
+        "/configurator",
+        "/certifications",
+        "/journal"
+      ]
+    },
+    "parts": {
+      "title": "Parts",
+      "description": "Meister-Engineering motorcycle parts",
+      "firstTitle": "Motorcycle Parts",
+      "links": [
+        "/Pilot",
+        "/Parts",
+        "/",
+        "/Motorcycle",
+        "/configurator",
+        "/certifications",
+        "/journal"
+      ]
+    },
+    "pilot": {
+      "title": "Pilot",
+      "description": "Meister-Engineering pilot products",
+      "firstTitle": "Pilot products",
+      "links": [
+        "/Pilot",
+        "/Parts",
+        "/",
+        "/Motorcycle",
+        "/configurator",
+        "/certifications",
+        "/journal"
+      ]
+    },
+    "login": {
+      "title": "Log In",
+      "description": "Log in to the Meister-Engineering Website",
+      "firstTitle": "Log In Meister-Engineering",
+      "links": [
+        "/Pilot",
+        "/Parts",
+        "/",
+        "/Motorcycle",
+        "/configurator",
+        "/certifications",
+        "/journal"
+      ]
+    }
+  },
+  "categorieFilter": {
+    "Pilot": {
+      "Helmets": {
+        "categoryName": "Helmets",
+        "img": "/static/categorie/photo_1621599638018_552.png",
+        "category": "Helmets"
+      },
+      "Clothing": {
+        "categoryName": "Clothing",
+        "img": "/static/categorie/Category_veste.png",
+        "category": "Clothing"
+      },
+      "Jackets": {
+        "categoryName": "Jackets",
+        "img": "/static/categorie/Category_veste.png",
+        "category": "Jackets"
+      },
+      "Bags": {
+        "categoryName": "Bags",
+        "img": "/static/categorie/photo_1629287927415_424.png",
+        "category": "Bags"
+      },
+      "Gloves": {
+        "categoryName": "Gloves",
+        "img": "/static/categorie/Category_gloves.png",
+        "category": "Gloves"
+      },
+      "Boots": {
+        "categoryName": "Boots",
+        "img": "/static/categorie/photo_1629287862479_636.png",
+        "category": "Boots"
+      },
+      "Caps": {
+        "categoryName": "Caps",
+        "img": "/static/categorie/photo_1629287372189_867.png",
+        "category": "Caps"
+      },
+      "Sun Peaks": {
+        "categoryName": "Sun Peaks",
+        "img": "/static/categorie/photo_1628118280622_651.png",
+        "category": "Sun Peaks"
+      },
+      "Rain Gear": {
+        "categoryName": "Rain Gear",
+        "img": "/static/categorie/photo_1629287895544_591.png",
+        "category": "Rain Gear"
+      },
+      "T-Shirts & Sweaters": {
+        "categoryName": "T-Shirts & Sweaters",
+        "img": "/static/categorie/photo_1638430821433_277.png",
+        "category": "T-Shirts & Sweaters"
+      },
+      "Pants": {
+        "categoryName": "Pants",
+        "img": "/static/categorie/photo_1629288221892_201.png",
+        "category": "Pants"
+      },
+      "Visors": {
+        "categoryName": "Visors",
+        "img": "/static/categorie/photo_1628118463639_354.png",
+        "category": "Visors"
+      },
+      "All": {
+        "categoryName": "All",
+        "img": "/static/categorie/Category_helmet.png",
+        "category": "All"
+      }
+    },
+    "Lifestyle": {
+      "T-short": {
+        "categoryName": "T-short",
+        "img": "/static/categorie/Category_helmet.png",
+        "category": "T-short"
+      },
+      "Pants": {
+        "categoryName": "Pants",
+        "img": "/static/categorie/Category_helmet.png",
+        "category": "Pants"
+      },
+      "Bags": {
+        "categoryName": "Bags",
+        "img": "/static/categorie/Category_helmet.png",
+        "category": "Bags"
+      },
+      "Stikers": {
+        "categoryName": "Stikers",
+        "img": "/static/categorie/Category_helmet.png",
+        "category": "Stikers"
+      },
+      "Boots": {
+        "categoryName": "Boots",
+        "img": "/static/categorie/Category_helmet.png",
+        "category": "Boots"
+      },
+      "Caps": {
+        "categoryName": "Caps",
+        "img": "/static/categorie/Category_helmet.png",
+        "category": "Caps"
+      }
+    },
+    "Parts": {
+      "Exhaust": {
+        "categoryName": "Exhaust",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Exhaust"
+      },
+      "Engine": {
+        "categoryName": "Engine",
+        "img": "/static/categorie/photo_1628119454474_779.png",
+        "category": "Engine"
+      },
+      "Train": {
+        "categoryName": "Train",
+        "img": "/static/categorie/photo_1628119882325_810.png",
+        "category": "Train"
+      },
+      "Electrics": {
+        "categoryName": "Electrics",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Electrics"
+      },
+      "Cycle": {
+        "categoryName": "Cycle",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Cycle"
+      },
+      "Bodyworks": {
+        "categoryName": "Bodyworks",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Bodyworks"
+      },
+      "Cockpit": {
+        "categoryName": "Cockpit",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Cockpit"
+      },
+      "Chassis": {
+        "categoryName": "Chassis",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Chassis"
+      },
+      "All": {
+        "categoryName": "All",
+        "img": "/static/categorie/factory.jpg",
+        "category": "All"
+      }
+    },
+    "Certification": {
+      "Exhaust": {
+        "categoryName": "Exhaust",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Exhaust"
+      },
+      "Engine": {
+        "categoryName": "Engine",
+        "img": "/static/categorie/photo_1628119454474_779.png",
+        "category": "Engine"
+      },
+      "Train": {
+        "categoryName": "Train",
+        "img": "/static/categorie/photo_1628119882325_810.png",
+        "category": "Train"
+      },
+      "Electrics": {
+        "categoryName": "Electrics",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Electrics"
+      },
+      "Cycle": {
+        "categoryName": "Cycle",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Cycle"
+      },
+      "Bodyworks": {
+        "categoryName": "Bodyworks",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Bodyworks"
+      },
+      "Cockpit": {
+        "categoryName": "Cockpit",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Cockpit"
+      },
+      "Chassis": {
+        "categoryName": "Chassis",
+        "img": "/static/categorie/factory.jpg",
+        "category": "Chassis"
+      },
+      "All": {
+        "categoryName": "All",
+        "img": "/static/categorie/factory.jpg",
+        "category": "All"
+      }
+    },
+    "Motorcycle": {
+      "Exhaust": {
+        "categoryName": "Meister Motorcycles",
+        "img": "/static/categorie/Meister_Motorcycles.png",
+        "category": "Meister Motorcycles"
+      },
+      "Engine": {
+        "categoryName": "Classic Motorcycles",
+        "img": "/static/categorie/Classic_Motorcycles.png",
+        "category": "Classic Motorcycles"
+      },
+      "Train": {
+        "categoryName": "Electric Motorcycles",
+        "img": "/static/categorie/Motorcycle_Electric.png",
+        "category": "Electric Motorcycles"
+      }
+    }
+  },
+  "categories": {
+    "Pilot": {
+      "Caps": {
+        "": {}
+      },
+      "Boots": {
+        "": {}
+      },
+      "Rain Gear": {
+        "": {}
+      },
+      "Bags": {
+        "": {}
+      },
+      "T-Shirts & Sweaters": {
+        "": {}
+      },
+      "Pants": {
+        "": {}
+      },
+      "Sun Peaks": {
+        "": {}
+      },
+      "Clothing": {
+        "": {}
+      },
+      "Jackets": {
+        "Bomber Jackets": {},
+        "Biker Jacket": {},
+        "Denim Jackets": {},
+        "Trucker Jacket": {}
+      },
+      "Helmets": {
+        "Full face": {},
+        "Modular": {},
+        "Off Road": {},
+        "Half": {},
+        "Open Face": {},
+        "Dual-Sport": {}
+      },
+      "Gloves": {
+        "Fingerless Gloves": {},
+        "Moto-cross Gloves": {},
+        "Gauntlet Gloves": {},
+        "Off road Gloves": {},
+        "Street Gloves": {},
+        "Cruising Gloves": {},
+        "Winter Gloves": {},
+        "Touring Gloves": {}
+      },
+      "Visors": {
+        "transparent visor": {},
+        "integrated glasses": {},
+        "Smoked visors": {},
+        "Iridium visors": {}
+      },
+      "All": {
+        "": {}
+      }
+    },
+    "Motorcycle": {
+      "Meister Motorcycles": {},
+      "Custom Motorcycles": {},
+      "Electric Motorcycles": {}
+    },
+    "Parts": {
+      "All": {},
+      "Bodyworks": {
+        "All": {},
+        "Seats": {},
+        "Fuel Caps": {},
+        "Fuel Tanks": {},
+        "Fairings": {},
+        "Windscreen": {},
+        "Side panels": {},
+        "Fenders": {}
+      },
+      "Cockpit": {
+        "All": {},
+        "Handlebar": {},
+        "Grips": {},
+        "Mirror": {}
+      },
+      "Chassis": {
+        "All": {},
+        "Frame": {},
+        "Fork parts": {},
+        "Suspension struts": {},
+        "Wheels": {}
+      },
+      "Electrics": {
+        "All": {},
+        "Charging System": {},
+        "Staters": {},
+        "Ignition": {},
+        "Spark Plugs": {},
+        "Wiring": {},
+        "Speedometers": {},
+        "Sensors": {},
+        "Batteries": {},
+        "Headlights": {},
+        "Rearlights": {},
+        "Turn Signals": {},
+        "Switches": {},
+        "Horns": {}
+      },
+      "Drive Train": {
+        "All": {},
+        "Gearboxes": {},
+        "Brakes": {},
+        "Clutch": {}
+      },
+      "Engine": {},
+      "Exhaust": {
+        "BMW R 2V": {},
+        "BMW R NineT": {},
+        "BMW K": {},
+        "BMW R18": {},
+        "BMW R1200": {}
+      }
+    },
+    "Certification": {
+      "All": {},
+      "Bodyworks": {
+        "All": {},
+        "Seats": {},
+        "Fuel Caps": {},
+        "Fuel Tanks": {},
+        "Fairings": {},
+        "Windscreen": {},
+        "Side panels": {},
+        "Fenders": {}
+      },
+      "Cockpit": {
+        "All": {},
+        "Handlebar": {},
+        "Grips": {},
+        "Mirror": {}
+      },
+      "Chassis": {
+        "All": {},
+        "Frame": {},
+        "Fork parts": {},
+        "Suspension struts": {},
+        "Wheels": {}
+      },
+      "Electrics": {
+        "All": {},
+        "Charging System": {},
+        "Staters": {},
+        "Ignition": {},
+        "Spark Plugs": {},
+        "Wiring": {},
+        "Speedometers": {},
+        "Sensors": {},
+        "Batteries": {},
+        "Headlights": {},
+        "Rearlights": {},
+        "Turn Signals": {},
+        "Switches": {},
+        "Horns": {}
+      },
+      "Drive Train": {
+        "All": {},
+        "Gearboxes": {},
+        "Brakes": {},
+        "Clutch": {}
+      },
+      "Engine": {},
+      "Exhaust": {
+        "BMW R 2V": {},
+        "BMW R NineT": {},
+        "BMW K": {},
+        "BMW R18": {},
+        "BMW R1200": {}
+      }
+    },
+    "Lifestyle": {
+      "T-short": {
+        "Standard": {},
+        "Sport": {}
+      },
+      "Pants": {
+        "Standard": {},
+        "Sport": {}
+      },
+      "Bags": {
+        "Standard": {},
+        "Sport": {}
+      },
+      "Stikers": {
+        "Standard": {},
+        "Sport": {}
+      },
+      "Boots": {
+        "Standard": {},
+        "Sport": {}
+      },
+      "Caps": {
+        "Standard": {},
+        "Sport": {}
+      }
+    }
+  },
+  "brands": {
+    "Meister": [],
+    "BMW": [],
+    "Triumph": [],
+    "Ducati": [],
+    "Hedon": [],
+    "Belstaff": [],
+    "Segura": [],
+    "Büse": [],
+    "Malle": [],
+    "Motogadget": [],
+    "Atto": [],
+    "Gazzini": [],
+    "Kawasaki": [],
+    "Suzuki": [],
+    "Dukati": [],
+    "Yamaha": [],
+    "Honda": [],
+    "Harley davidson": [],
+    "Moto Guzzi": [],
+    "Universal": []
+  }
+}

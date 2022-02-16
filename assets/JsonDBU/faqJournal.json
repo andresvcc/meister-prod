@@ -1,0 +1,656 @@
+{
+  "list": {
+    "test": {
+      "langue": "EN",
+      "time": "2",
+      "title": "test",
+      "subtitle": "test faq",
+      "description": "sdfs sd fsdf sdfsdf",
+      "category": "faq",
+      "tags": [],
+      "content": [
+        {
+          "id": 0,
+          "component": "Text Editor",
+          "editing": false,
+          "contain": {
+            "blocks": [
+              {
+                "key": "enube",
+                "text": "ICI un testz",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": [],
+                "data": {}
+              }
+            ],
+            "entityMap": {}
+          }
+        },
+        {
+          "id": 1,
+          "component": "Full Image",
+          "editing": false,
+          "contain": {
+            "height": "500px",
+            "style": "cover",
+            "position": "center top",
+            "urlPhoto": "/static/images/bg7.jpg"
+          }
+        }
+      ],
+      "photo": "/static/images/bg7.jpg"
+    },
+    "Are your motorcycles legal in Switzerland?": {
+      "langue": "",
+      "time": 0,
+      "title": "Are your motorcycles legal in Switzerland?",
+      "subtitle": "",
+      "description": "Yes! Swiss laws are very strict on transformed motorcycles so we get all of our motorcycles tested and approved by DTC to guarantee our client everything is legal.",
+      "category": "homologations",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Who writes the articles on Wikipedia?": {
+      "langue": "EN",
+      "time": 0,
+      "title": "Who writes the articles on Wikipedia?",
+      "subtitle": "FAQs",
+      "description": "You are required to have a Wikipedia account to create a new article—you can register here. To see other benefits to creating an account, see Why create an account?\nFor creating a new article see Wikipedia:Your first article and Wikipedia:Article development; and you may wish to try the Article Wizard. For creating a new page in your userspace see How do I create a user subpage?; or use the Article Wizard, which has an option for that. Make sure that there is enough context and it is notable.",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [
+        {
+          "id": 0,
+          "component": "Text Editor",
+          "editing": false,
+          "contain": {
+            "blocks": [
+              {
+                "key": "dc7al",
+                "text": "In a word, no. If you need specific advice (for example, medical, legal, financial or risk management) please seek a professional who is licensed or knowledgeable in that area. That is not to say that you will not find valuable and accurate information in Wikipedia; much of the time you will. However, Wikipedia cannot guarantee the validity of the information found here. The content of any given article may recently have been changed, vandalized or altered by someone whose opinion does not correspond with the state of knowledge in the relevant fields. See Wikipedia:General disclaimer for more cautionary information.",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": [],
+                "data": {
+                  "text-align": "justify"
+                }
+              }
+            ],
+            "entityMap": {}
+          }
+        }
+      ],
+      "photo": ""
+    },
+    "Motorcycle Parts": {
+      "langue": "",
+      "time": 0,
+      "title": "Motorcycle Parts",
+      "subtitle": "",
+      "description": "",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [
+        {
+          "id": 0,
+          "component": "Title",
+          "editing": true,
+          "contain": {
+            "data": "contain Component"
+          }
+        },
+        {
+          "id": 1,
+          "component": "Sub Title",
+          "editing": true,
+          "contain": {
+            "data": "contain Component"
+          }
+        },
+        {
+          "id": 2,
+          "component": "Text Editor",
+          "editing": false,
+          "contain": {
+            "blocks": [
+              {
+                "key": "9enle",
+                "text": "wefwfwfwe",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": [],
+                "data": {}
+              }
+            ],
+            "entityMap": {}
+          }
+        }
+      ],
+      "photo": ""
+    },
+    "I’m missing a part on my motorcycle, can I get it via Meister?": {
+      "langue": "",
+      "time": 0,
+      "title": "I’m missing a part on my motorcycle, can I get it via Meister?",
+      "subtitle": "",
+      "description": "TBD",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you build swingarm license plate holders?": {
+      "langue": "EN",
+      "time": 0,
+      "title": "Do you build swingarm license plate holders?",
+      "subtitle": "",
+      "description": "TBD",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you sell only parts for motorcycles?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you sell only parts for motorcycles?",
+      "subtitle": "",
+      "description": "Yes! ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [
+        {
+          "id": 0,
+          "component": "Text Editor",
+          "editing": false,
+          "contain": {
+            "blocks": [
+              {
+                "key": "260lr",
+                "text": "You can find all our motorcycles parts here: http://www.meister-engineering.com/shop-bmw-parts  ",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": [
+                  {
+                    "offset": 45,
+                    "length": 49,
+                    "key": 0
+                  }
+                ],
+                "data": {}
+              }
+            ],
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.meister-engineering.com/shop-bmw-parts",
+                  "targetOption": "_blank"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "photo": ""
+    },
+    "Do you do fuel tank painting?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you do fuel tank painting?",
+      "subtitle": "",
+      "description": "Yes! Plain paint or special designs, everything is possible! Contact us to know more. ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "What is the price to get a personalised seat for my motorcycle?": {
+      "langue": "",
+      "time": 0,
+      "title": "What is the price to get a personalised seat for my motorcycle?",
+      "subtitle": "",
+      "description": "For each personalised request, prices will vary depending on the model, the design and the materials. Get in touch! We’ll discuss everything together! ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you design motorcycle seat?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you design motorcycle seat?",
+      "subtitle": "",
+      "description": "design, texture, couture, forme etc ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Can I have a personalized design for my motorcycle seat?": {
+      "langue": "",
+      "time": 0,
+      "title": "Can I have a personalized design for my motorcycle seat?",
+      "subtitle": "",
+      "description": "Yes! We create custom-made saddles (material, patterns, stitching, etc.) ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Can I have a personalized design for my fuel tank?": {
+      "langue": "",
+      "time": 0,
+      "title": "Can I have a personalized design for my fuel tank?",
+      "subtitle": "",
+      "description": "Yes! We create custom tanks (paint, colors, patterns, designs, etc.) ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you have a price list for motorcycle transformations?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you have a price list for motorcycle transformations?",
+      "subtitle": "",
+      "description": "As each request and transformation are unique, we do not have a price list. However, you can contact us or visit us in our workshop and we’ll establish a quote upon your request ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you customize only BMW?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you customize only BMW?",
+      "subtitle": "",
+      "description": "No, we also work on other motorcycle brands (Triumph, Ducati, Yamaha, Honda, Suzuki, Kawazaki, Moto Guzzi). However we are specialized in BMW motorcycle customization. ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Why are you specialized in BMW?": {
+      "langue": "",
+      "time": 0,
+      "title": "Why are you specialized in BMW?",
+      "subtitle": "",
+      "description": "This brand means something special to us as we worked a lot on their models and we share their values. BMW's spiritual home lies in Germany on our northern border. Always convenient not to be too far away. ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [
+        {
+          "id": 0,
+          "component": "Text Editor",
+          "editing": false,
+          "contain": {
+            "blocks": [
+              {
+                "key": "ee2gk",
+                "text": "The brand uses quality materials and follow solid engineering principles which results in a built-in longevity.",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": [],
+                "data": {}
+              },
+              {
+                "key": "7dgot",
+                "text": "So, we like to contribute to their ongoing popularity and as the demand grows, it means companies are still producing OEM-grade replacement parts and tuning parts, which is perfect for us. Read full article (renvoyer à l'article du Journal \"Why BMW?\" ",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": [],
+                "data": {}
+              }
+            ],
+            "entityMap": {}
+          }
+        }
+      ],
+      "photo": ""
+    },
+    "Do we have to bring our own motorcycle or do you have a stock of motorcycles ready to be cusomized?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do we have to bring our own motorcycle or do you have a stock of motorcycles ready to be cusomized?",
+      "subtitle": "",
+      "description": "Either! You can bring your favorite model or have a look at the wide range of base motorcycles that are waiting to be transformed in our stock (BMW R /7, R Nine T etc.) We offer a one year guarantee on our work in both cases and a one year warranty on motorcycles coming out of our stock.  ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you install motorcycle frames?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you install motorcycle frames?",
+      "subtitle": "",
+      "description": "Yes! ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you do partnerships?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you do partnerships?",
+      "subtitle": "",
+      "description": "Yes, you can contact us at moto@meister-engineering.com",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "How much does it cost to install the frame?": {
+      "langue": "",
+      "time": 0,
+      "title": "How much does it cost to install the frame?",
+      "subtitle": "",
+      "description": "It will cost you CHF 120.-/hour of work. Usually, painitng the rear loop is necessary which will cost an additionnal CHF 120.-.",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you have < 35 kW motorcycles for young driving license?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you have < 35 kW motorcycles for young driving license?",
+      "subtitle": "",
+      "description": "Yes!",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you do maintenance work on motorcycles?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you do maintenance work on motorcycles?",
+      "subtitle": "",
+      "description": "Yes!",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Can we bring you a custom motorcycle to do the electric work?": {
+      "langue": "",
+      "time": 0,
+      "title": "Can we bring you a custom motorcycle to do the electric work?",
+      "subtitle": "",
+      "description": "Yes!",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "How much does the quote for a motorcycle restoration costs?": {
+      "langue": "",
+      "time": 0,
+      "title": "How much does the quote for a motorcycle restoration costs?",
+      "subtitle": "",
+      "description": "The quote will be charged CHF 180.-. This amount will however be deducted from the total cost of transformation if you decide to work with us.",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Can you pick up a bike at a specific address ?": {
+      "langue": "",
+      "time": 0,
+      "title": "Can you pick up a bike at a specific address ?",
+      "subtitle": "",
+      "description": "Yes we have a special Van for that. This will be charged CHF 2.-/Km in Switzerland. For any request regarding locations in other countries, the amount may vary.",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "": {
+      "langue": "",
+      "time": 0,
+      "title": "",
+      "subtitle": "",
+      "description": "",
+      "category": "",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Can you go buy a motorcycle for me and check if it is in good shape?": {
+      "langue": "",
+      "time": 0,
+      "title": "Can you go buy a motorcycle for me and check if it is in good shape?",
+      "subtitle": "",
+      "description": "Yes! This will be charged CHF 2.-/Km in Switzerland. For any request regarding locations in other countries, the amount may vary.",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you do motorcycles on budget?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you do motorcycles on budget?",
+      "subtitle": "",
+      "description": "Of course, one of our speciality is to reshape a bad looking motorcycle at its best with the budget of our customers",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "How much time does it take to build a motorcycle?": {
+      "langue": "",
+      "time": 0,
+      "title": "How much time does it take to build a motorcycle?",
+      "subtitle": "",
+      "description": "It depends on the base and what we do on the bike. It can take one week for a light custom or 6 weeks for a BMW on our rolling chasssis custom built program. For further details, please contact us.",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "How is the shipping rate calculated? ": {
+      "langue": "",
+      "time": 0,
+      "title": "How is the shipping rate calculated? ",
+      "subtitle": "",
+      "description": "The shipping rate is calculated acording to the size, the weight and the delivery destination of the parcel.",
+      "category": "customer",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Where can I track my order?": {
+      "langue": "",
+      "time": 0,
+      "title": "Where can I track my order?",
+      "subtitle": "",
+      "description": "TBD",
+      "category": "customer",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Can I return or exchange an item?": {
+      "langue": "",
+      "time": 0,
+      "title": "Can I return or exchange an item?",
+      "subtitle": "",
+      "description": "Yes, you can return or exchange an item. Please be aware that it will be at the customer's expense.",
+      "category": "customer",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Can I change or cancel my order?": {
+      "langue": "",
+      "time": 0,
+      "title": "Can I change or cancel my order?",
+      "subtitle": "",
+      "description": "TBD",
+      "category": "customer",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "All the motorcycle parts are legal in Switzerland?": {
+      "langue": "",
+      "time": 0,
+      "title": "All the motorcycle parts are legal in Switzerland?",
+      "subtitle": "",
+      "description": "Yes! Our parts are tested and approved by DTC to guarantee our client everything is legal.",
+      "category": "homologations",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Do you sell certifications for parts?": {
+      "langue": "",
+      "time": 0,
+      "title": "Do you sell certifications for parts?",
+      "subtitle": "",
+      "description": "Yes! We have a lot of different certifications for different brands (add logo brands). Swipe up to find the one you need! Or get in touch for special requests! (icone message à envoyer) http://www.meister-engineering.com/swiss-certifications-dtc",
+      "category": "homologations",
+      "tags": [],
+      "content": [],
+      "photo": ""
+    },
+    "Where can I buy DTC certifications?": {
+      "langue": "",
+      "time": 0,
+      "title": "Where can I buy DTC certifications?",
+      "subtitle": "",
+      "description": "Through this link: ",
+      "category": "homologations",
+      "tags": [],
+      "content": [
+        {
+          "id": 0,
+          "component": "Text Editor",
+          "editing": false,
+          "contain": {
+            "blocks": [
+              {
+                "key": "6h34f",
+                "text": "http://www.meister-engineering.com/swiss-certifications-dtc  ",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": [
+                  {
+                    "offset": 0,
+                    "length": 60,
+                    "key": 0
+                  }
+                ],
+                "data": {}
+              }
+            ],
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.meister-engineering.com/swiss-certifications-dtc",
+                  "targetOption": "_self"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "photo": ""
+    },
+    "How to get a Meister Motorcycle?": {
+      "langue": "",
+      "time": 0,
+      "title": "How to get a Meister Motorcycle?",
+      "subtitle": "",
+      "description": "Through this link: ",
+      "category": "motorcycleparts",
+      "tags": [],
+      "content": [
+        {
+          "id": 0,
+          "component": "Text Editor",
+          "editing": false,
+          "contain": {
+            "blocks": [
+              {
+                "key": "a96ur",
+                "text": "http://www.meister-engineering.com/swiss-certifications-dtc  ",
+                "type": "unstyled",
+                "depth": 0,
+                "inlineStyleRanges": [],
+                "entityRanges": [
+                  {
+                    "offset": 0,
+                    "length": 60,
+                    "key": 0
+                  }
+                ],
+                "data": {}
+              }
+            ],
+            "entityMap": {
+              "0": {
+                "type": "LINK",
+                "mutability": "MUTABLE",
+                "data": {
+                  "url": "http://www.meister-engineering.com/swiss-certifications-dtc",
+                  "targetOption": "_blank"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "photo": ""
+    }
+  },
+  "order": [
+    "Where can I buy DTC certifications?",
+    "All the motorcycle parts are legal in Switzerland?",
+    "Do you sell certifications for parts?",
+    "Are your motorcycles legal in Switzerland?",
+    "Can I change or cancel my order?",
+    "Can I return or exchange an item?",
+    "Where can I track my order?",
+    "How is the shipping rate calculated? ",
+    "Do you build swingarm license plate holders?",
+    "I’m missing a part on my motorcycle, can I get it via Meister?",
+    "Do you sell only parts for motorcycles?",
+    "Do you do fuel tank painting?",
+    "Do you have a price list for motorcycle transformations?",
+    "Can I have a personalized design for my fuel tank?",
+    "What is the price to get a personalised seat for my motorcycle?",
+    "Do we have to bring our own motorcycle or do you have a stock of motorcycles ready to be cusomized?",
+    "Do you install motorcycle frames?",
+    "How much time does it take to build a motorcycle?",
+    "Do you do motorcycles on budget?",
+    "Can you go buy a motorcycle for me and check if it is in good shape?",
+    "Can you pick up a bike at a specific address ?",
+    "How much does the quote for a motorcycle restoration costs?",
+    "Can we bring you a custom motorcycle to do the electric work?",
+    "Do you do maintenance work on motorcycles?",
+    "Do you have < 35 kW motorcycles for young driving license?",
+    "How much does it cost to install the frame?",
+    "Do you do partnerships?",
+    "Why are you specialized in BMW?",
+    "Do you customize only BMW?",
+    "Can I have a personalized design for my motorcycle seat?",
+    "Do you design motorcycle seat?"
+  ]
+}

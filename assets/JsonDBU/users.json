@@ -1,0 +1,24 @@
+{
+  "10223802746808348facebook": {
+    "verified": true,
+    "registered": true,
+    "lname": "Caballero",
+    "fname": "Andres",
+    "email": "andresvcc88@gmail.com",
+    "password": "$2b$10$lDaN/TmcCswXAhL02rVZ6Or3oRcVTDCvc8BTtfOpvlxTEyMKFbzee",
+    "provider": "facebook",
+    "selectedDelivery": 0,
+    "selectedBilling": 0,
+    "cartItems": {},
+    "favorite": {},
+    "viewed": {},
+    "billings": {},
+    "marketing": {},
+    "orders": {},
+    "addresses": {},
+    "currency": "CHF",
+    "language": "EN",
+    "countryTVA": "CH",
+    "tva": 0.077
+  }
+}

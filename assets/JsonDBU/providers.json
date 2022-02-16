@@ -1,0 +1,36 @@
+{
+  "list": {
+    "Hedon": {
+      "nif": "123456",
+      "name": "Hedon",
+      "manager": "Andres Caballero",
+      "country": "Switzerland",
+      "city": "Genève",
+      "address": "Avenu du la rue, 0",
+      "zip": "1200",
+      "telephone": "+41782160212",
+      "email": "andresvcc88@gmail.com",
+      "iban": "4242 - 4242 - 4242 - 4242",
+      "bic": "SADREW",
+      "orders": [],
+      "date": "2021-08-18T14:20:47.385Z",
+      "visible": "true"
+    },
+    "Meister": {
+      "nif": "00000",
+      "name": "Meister",
+      "manager": "Kenza",
+      "country": "Switzerland",
+      "city": "genève",
+      "address": "rue de la ",
+      "zip": "1200",
+      "telephone": "+41782160212",
+      "email": "andresvcc88@gmail.com",
+      "iban": "0000 - 0000 - 0000 - 0000",
+      "bic": "000000000000",
+      "orders": [],
+      "date": "2021-08-24T05:13:52.865Z",
+      "visible": "true"
+    }
+  }
+}
