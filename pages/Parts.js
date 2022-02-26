@@ -177,7 +177,7 @@ const PageMobile = ({ productList, categories }) => {
   };
 
   return (
-    <Div width="100%" style={{ minHeight: '90vh' }} vertical="top" >
+    <Div width="100%" style={{ minHeight: '90vh' }} vertical="top">
       <Div height="100px" />
 
       <PilotScroll products={productList} categories={categories} setFilter={setFilter} filter={filter} categorie="Parts" />
