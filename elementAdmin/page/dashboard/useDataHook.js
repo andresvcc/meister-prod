@@ -78,7 +78,7 @@ const useData = () => {
 
   // Produits
   // 1. 10 produits les plus vendus
-  const arrProductsInBillingsWithRepeat = deepFlatten(Object.values(users).map(({ billings }) => Object.values(billings).map(({ products }) => products.map(({ name }) => name))));
+  const arrProductsInBillingsWithRepeat = deepFlatten(Object.values({ ...users }).map(({ billings }) => Object.values({ ...billings }).map(({ products = [] }) => products.map(({ name = '' }) => name))));
   const arrProductsInBillingsCount = countRepeat(arrProductsInBillingsWithRepeat); // ?.map(({ products }) => products)
   // sort - ten most bought products
   const tenMostProducts = [Object.entries(arrProductsInBillingsCount)
