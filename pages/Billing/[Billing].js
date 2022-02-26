@@ -155,7 +155,7 @@ function Page(props) {
 
         </GridItem>
 
-        <GridItem num={[4, 6, 6, 6, 6, 6]}>
+        <GridItem num={[5, 6, 6, 6, 6, 6]}>
           <Div width="100%" horizontal="right">
             {
               orders[billingsData?.idBilling]?.status === 'reception' ? (

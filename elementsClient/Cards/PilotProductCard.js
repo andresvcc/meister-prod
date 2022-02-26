@@ -93,8 +93,8 @@ export default function CardProfile(props) {
         {
           product.tag !== undefined ? (
             <Div
+
               vertical="top"
-              dev
               height={width < 650 ? `${widthBox * 1.05}px` : `${widthBox}px`}
               width={width < 950 ? `${widthBox / 1.2}px` : width < 960 ? `${widthBox / 1.1}px` : width < 1200 ? `${widthBox / 1.5}px` : `${widthBox / 1.35}px`}
               horizontal="left"
@@ -108,6 +108,7 @@ export default function CardProfile(props) {
             >
               <Div
                 row
+                dev
                 style={{
                   border: '1px solid white', borderRadius: '5px', background: 'white', paddingLeft: '10px', paddingRight: '10px'
                 }}
@@ -144,7 +145,7 @@ export default function CardProfile(props) {
 
       <Div height="15px" />
 
-      <Div width="100%">
+      <Div width="100%" style={{ paddingLeft: width > 1280 ? '10px' : '0px' }}>
         <Div onClick={() => goToProduct(product.product)} width="100%">
           <Div height="20px" width="100%" horizontal="left" style={{ fontFamily: 'Gorgia', fontSize: '16px', textTransform: 'uppercase' }}>
             {product.brand}
@@ -190,7 +191,7 @@ export default function CardProfile(props) {
 
       */}
 
-      <Div height="55px" vertical="top" width="100%" style={{ marginTop: '10px' }}>
+      <Div height="55px" vertical="top" width="100%" style={{ marginTop: '10px', paddingLeft: width > 1280 ? '10px' : '0px' }}>
         <Div row height="15px" width="100%" horizontal="at" style={{ fontFamily: 'Gorgia', fontSize: '16px', marginBottom: '5px' }}>
           <Div>
             {`${localCurrency} ${priceOptions}`}

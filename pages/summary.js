@@ -81,7 +81,7 @@ function Page(props) {
             <PriceSection marginLeftInside={marginLeftInside} />
           </GridItem>
         </GridContainer>
-        <Div height="80px" />
+        <Div height="200px" />
       </Div>
     </Div>
   );

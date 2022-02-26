@@ -107,21 +107,9 @@ function LoginElement(props) {
               </GridContainer>
             </GridItem>
 
-            <GridItem num={[12, 12, 5, 5, 5]}>
+            <GridItem num={[12, 12, 12, 12, 12]}>
               <Div width="100%">
                 <LoginForm submit={submit} language="EN" />
-              </Div>
-            </GridItem>
-
-            <GridItem num={[12, 12, 2, 2, 2]}>
-              <DividerLine />
-            </GridItem>
-
-            <GridItem num={[12, 12, 5, 5, 5]}>
-              <Div vertical="top" width={[280, 280, 280, 280, 280]} height="100%" style={{ paddingTop: '3px' }}>
-                <SocialButton title="Continue with Facebook" image={facebookIcon} />
-                <Div height="15px" />
-                <SocialButton title="Continue with Google" image={googleIcon} />
               </Div>
             </GridItem>
 

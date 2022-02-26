@@ -4,7 +4,6 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Div } from 'component';
 import dynamic from 'next/dynamic';
 import { title } from '@/assets/jss/nextjs-material-dashboard-pro';
-
 import types from './otherTypes/addProductTypes';
 
 const FlexForm = dynamic(

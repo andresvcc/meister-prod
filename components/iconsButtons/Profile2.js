@@ -14,7 +14,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import MenuList from '@material-ui/core/MenuList';
 import MenuItem from '@material-ui/core/MenuItem';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-// import SocialLogin from 'react-social-login';
+import SocialLogin from 'react-social-login';
 import Button from '@/components/CustomButtons/Button';
 import GridContainer from '@/components/Grid/GridContainer';
 import Spam from '@/components/Typography/Spam';
@@ -145,7 +145,7 @@ const SocialButtonGoogle = ({ children, triggerLogin, ...props }) => {
   );
 };
 
-// const GoogleSocialLogin = SocialLogin(SocialButtonGoogle);
+const GoogleSocialLogin = SocialLogin(SocialButtonGoogle);
 
 const ErrorMsg = ({ message, i }) => (message !== '' ? <Spam type="subtitle4" color="danger">{message}</Spam> : null);
 
@@ -203,7 +203,8 @@ export default function BagCardDialog(props) {
       setSocialLogin(null);
       handleClose();
       router.push({
-        pathname: '/',
+        pathname: router.pathname,
+        query: { ...(router.query || {}) },
       });
     } else if (params === 'profile') {
       router.push({
@@ -258,21 +259,21 @@ export default function BagCardDialog(props) {
   };
 
   const loginGoogle = (googleUser) => {
-    if (profilInfo.registered) {
-      setSocialLogin({
-        accessToken: googleUser._token.accessToken,
-        data_access_expiration_time: googleUser._token.expiresAt,
-        email: googleUser._profile.email,
-        expiresIn: googleUser._token.expiresIn,
-        graphDomain: googleUser._provider,
-        id: googleUser._profile.id,
-        name: googleUser._profile.name,
-        provider: googleUser._provider,
-        signedRequest: googleUser._token.idToken,
-        status: 'connected',
-        userID: googleUser._profile.id,
-      });
-    }
+    const user = {
+      accessToken: googleUser._token.accessToken,
+      data_access_expiration_time: googleUser._token.expiresAt,
+      email: googleUser._profile.email,
+      expiresIn: googleUser._token.expiresIn,
+      graphDomain: googleUser._provider,
+      id: googleUser._profile.id,
+      name: googleUser._profile.name,
+      provider: googleUser._provider,
+      signedRequest: googleUser._token.idToken,
+      status: 'connected',
+      userID: googleUser._profile.id,
+    };
+
+    setSocialLogin(user);
   };
 
   useEffect(() => {
@@ -440,19 +441,12 @@ export default function BagCardDialog(props) {
                 <Spam type="subtitle3">OR</Spam>
 
                 <SocialButton title="Continue with Facebook" image={facebookIcon} onClick={loginFacebook} />
-
-                <Div height="15px" />
-
-                {/*
-
                 <GoogleSocialLogin
                   provider="google"
                   appId="52138817195-8h3925qg2rffhl8j6sl8uvbdsi32m762.apps.googleusercontent.com"
                   onLoginSuccess={loginGoogle}
-                  onLoginFailure={(a) => console.log(a)}
+                  onLoginFailure={(a) => console.log('asd', a)}
                 />
-
-                */}
 
                 <div
                   style={{

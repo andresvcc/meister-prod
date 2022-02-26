@@ -7,6 +7,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '@/layouts/Default2';
+import Spam from '@/components/Typography/Spam';
 
 function Page(props) {
   const { user, useSocketHook, ...rest } = props;
@@ -14,6 +15,7 @@ function Page(props) {
   const { height, type } = hookDeviceInfo();
   const [{ profilInfo }, dispatch] = redux();
   const imagine2 = '/static/images/MotoCategorie/Motorcycle_Custom.png';
+  // const imagine2 = '/static/images/MotoCategorie/Motorcycle_Classique_1.png';
   /*
     <Iframe
           url="https://webgl.tailora.fr/demo/"
@@ -27,28 +29,23 @@ function Page(props) {
         */
 
   return (
-    <Div dev width="100%" style={{ minHeight: `${height * 0.50}px`, background: 'white' }} vertical="top">
-      <Div dev height={type === 'mobile' ? 1 : 150} />
-      <Div
-        width="100%"
-        style={{ fontFamily: 'Georgia', fontSize: '18px' }}
-      >
-        Coming soon:
+    <Div width="100%" style={{ minHeight: `${height * 0.85}px`, background: 'white' }} vertical="top">
+      <Div height={type === 'mobile' ? 150 : 150} />
 
-      </Div>
+      <Spam type="subtitle4Greens">Coming soon:</Spam>
 
-      <Div
-      dev
-        height="90%"
-        width="100%"
-        style={{ fontFamily: 'Georgia', fontSize: '17px', textAlign:'center' }}
-      >
-        Design your future meister Motorcycle here!
+      <Spam type="subtitle4Greens">Design your future meister Motorcycle here!</Spam>
 
-      </Div>
-      <Div width="500px" height="370px">
-        <Image src={imagine2 ?? '/static/images/notPhoto.png'} alt="..." width="600px" height="370px" />
-      </Div>
+      {type === 'mobile'
+        ? (
+          <Div width="690px" height="370px">
+            <Image src={imagine2 ?? '/static/images/notPhoto.png'} alt="..." width="600px" height="370px" />
+          </Div>
+        ) : (
+          <Div width="800px" height="500px">
+            <Image src={imagine2 ?? '/static/images/notPhoto.png'} alt="..." width="800px" height="500px" />
+          </Div>
+        )}
 
     </Div>
   );

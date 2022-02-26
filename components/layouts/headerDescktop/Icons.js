@@ -40,7 +40,9 @@ const Icons = memo(({ useSocketHook }) => {
   }, []);
 
   useEffect(() => {
-
+    if (socialLogin) {
+      console.debug({ socialLogin });
+    }
   }, [socialLogin]);
 
   useEffect(() => {

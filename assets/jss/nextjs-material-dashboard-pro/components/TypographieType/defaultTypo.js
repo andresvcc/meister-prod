@@ -10,16 +10,16 @@ import {
 
 const proportion1 = (theme) => ({
   [theme.breakpoints.only('xs')]: {
-    fontSize: '15px',
+    fontSize: '35px',
     lineHeight: '1.3em'
   },
   [theme.breakpoints.only('sm')]: {
-    fontSize: '18px',
+    fontSize: '35px',
     lineHeight: '25px'
   },
 
   [theme.breakpoints.only('xl')]: {
-    fontSize: '18px',
+    fontSize: '35px',
     lineHeight: '30px'
   },
 });
@@ -35,6 +35,10 @@ const defaultTypo = (theme) => ({
     fontFamily: 'NovaLight, sans serif',
     fontSize: '15px',
     color: 'grey'
+  },
+  configuratorTitle: {
+    fontFamily: 'Georgia',
+    ...proportion1(theme)
   },
 });
 

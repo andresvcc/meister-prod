@@ -387,62 +387,40 @@ const ProductUnique = (props) => {
           scroll={scroll}
           aria-labelledby="scroll-dialog-title"
           aria-describedby="scroll-dialog-description"
-          fullScreen
+
         >
-          <Button onClick={handleCloseDialog} color="primary">
-            Back
-          </Button>
+
           <DialogContent dividers={scroll === 'paper'}>
 
             <GridContainer>
               <GridItem num={[12, 12, 12, 12, 12]}>
-                <Div height="120px" width={['90%', '95%', '95%', '85%', '95%']} horizontal="left">
+                <Div height="120px" width={['80%', '95%', '95%', '85%', '95%']} horizontal="center">
                   <Spam type="testTypo">
-                    To buy this motorcycle, please fill out the form below. We will contact you to finalize this purchase
+                    To buy this motorcycle, please fill out the form below.
+                  </Spam>
+                  <Spam type="testTypo">
+                    We will contact you to finalize this purchase
                   </Spam>
                 </Div>
 
               </GridItem>
 
-              <GridItem num={[12, 6, 6, 6, 6]}>
+              <GridItem num={[12, 12, 12, 12, 12]}>
                 <Div
                   width="100%"
-                  height={['300px', '650px', '650px', '650px', '650px']}
-                  style={{ maxWidth: '500px' }}
-                  vertical="top"
-                >
-                  <Div height={['0px', '15px', '40px', '40px', '40px']} />
-                  <Div width="90%" horizontal="left">
-                    <Spam type="h1TitleBold">{languages.EN.nameProduct}</Spam>
-                  </Div>
-                  <Div width="90%" horizontal="left">
-                    <Spam type="h1TitleBold">
-                      {`${localCurrency} ${priceOptions}`}
-                    </Spam>
-                  </Div>
-                  <img
-                    src={product?.colors[0]?.photos[0] ?? ''}
-                    alt="fd"
-                    width="150px"
-                    height="250px"
-                    style={{
-                      width: '100%',
-                      objectFit: 'cover',
-                    }}
-                  />
-                </Div>
-              </GridItem>
-
-              <GridItem num={[12, 6, 6, 6, 6]}>
-                <Div
-                  width="100%"
-                  height={['820px', '820px', '750px', '750px', '750px']}
+                  height={['950px', '950px', '780px', '780px', '780px']}
                 >
                   {errorApiLogin.map((val, i) => <ErrorMsg message={val} i={i} key={`${i + 1}`} />)}
 
                   <Div height={['20px', '20px', '0px', '0px', '0px']} />
                   <ContactForm submit={contactSubmit} language="EN" />
                   {validateForm.map((val, i) => <ValidateMsg message={val} i={i} key={`${i + 1}`} />)}
+                  <Div width="100%">
+                    <Button onClick={handleCloseDialog} color="primary" style={{ fontSize: '14px', width: '300px' }}>
+                      Back
+                    </Button>
+                  </Div>
+
                   <Div height={['20px', '20px', '20px', '20px', '20px']} />
                   <Div height={['50px', '50px', '0px', '0px', '0px']} />
                 </Div>

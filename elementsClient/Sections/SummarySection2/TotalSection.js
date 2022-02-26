@@ -266,19 +266,6 @@ export default function BagCardDialog(props) {
               </span>
             </p>
           </Div>
-          <Div width="calc(100% - 40px)" onClick={() => withCoupon()} horizontal="left">
-            <p className={classes.couponFont}>
-              Apply a coupon
-              {' '}
-            </p>
-          </Div>
-          {
-            coupon ? (
-              <Div width="100%" height="100%">
-                <CouponForm language="EN" />
-              </Div>
-            ) : <Div />
-          }
 
           <Div height="15px" />
           <Div width="104%">
@@ -343,3 +330,19 @@ export default function BagCardDialog(props) {
     </Div>
   );
 }
+
+/*
+  <Div width="calc(100% - 40px)" onClick={() => withCoupon()} horizontal="left">
+            <p className={classes.couponFont}>
+              Apply a coupon
+              {' '}
+            </p>
+          </Div>
+          {
+            coupon ? (
+              <Div width="100%" height="100%">
+                <CouponForm language="EN" />
+              </Div>
+            ) : <Div />
+          }
+           */

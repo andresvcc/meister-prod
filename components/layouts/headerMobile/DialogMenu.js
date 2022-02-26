@@ -48,11 +48,22 @@ const DialogMenu = () => {
   return (
     <>
       <MenuIcon onClick={open} />
+
       <Div
         style={{
-          position: 'fixed', top: 0, left: openMobileMenu ? '-10%' : '-120%', background: 'white', boxShadow: '3px 9px 13px 6px rgba(0,0,0,0.3)', color: 'black', transition: 'all ease .4s'
+          position: 'fixed', top: 0, right: openMobileMenu ? '-10%' : '-120%', background: 'transparent', color: 'black', transition: 'all ease .4s'
         }}
-        width="105vw"
+        width="90vw"
+        height="105vh"
+        horizontal="right"
+        vertical="top"
+        onClick={close}
+      />
+      <Div
+        style={{
+          position: 'fixed', top: 0, left: openMobileMenu ? '-8%' : '-120%', background: 'white', boxShadow: '3px 9px 13px 6px rgba(0,0,0,0.3)', color: 'black', transition: 'all ease .4s'
+        }}
+        width="82vw"
         height="105vh"
         horizontal="right"
         vertical="top"

@@ -97,21 +97,6 @@ function RegisterElement(props) {
 
       <Div height={20} />
 
-      <Div width={[300, 380, 400, 400, 400]} row>
-        <Div width="45%" style={{ borderTop: '1px solid #00000020' }} />
-        <Div width="45%" style={{ fontFamily: 'GeorgiaLight', fontSize: '13px' }}>
-          OR
-        </Div>
-        <Div width="45%" style={{ borderTop: '1px solid #00000020' }} />
-      </Div>
-
-      <Div height={20} />
-
-      <Div height={130}>
-        <SocialButton title="Continue with Facebook" image={facebookIcon} />
-        <Div height="15px" />
-        <SocialButton title="Continue with Google" image={googleIcon} />
-      </Div>
       <Div width="100%">
         <Div width={400} height={35} />
       </Div>

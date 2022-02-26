@@ -40,7 +40,7 @@ export default function ContactForm({ language, submit }) {
   return (
     <FlexForm
       buttonWidth="100%"
-      width={['300px', '320px', '320px', '320px', '320px']}
+      width={['250px', '320px', '320px', '320px', '320px']}
       title=""
       language={language || 'EN'}
       variant="outlined"

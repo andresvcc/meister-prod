@@ -10,6 +10,8 @@ import Button from '@/components/CustomButtons/Button';
 import styles2 from '@/assets/jss/nextjs-material-dashboard-pro/views/sweetAlertStyle';
 import SweetTreatmentOrder from './SweetTreatmentOrder';
 
+const mailSent = require('../../../../socketOn/mail/sending_mail');
+
 const useStyles2 = makeStyles(styles2);
 
 const sweetAlertStyle = { display: 'block', marginTop: '-100px' };
@@ -34,12 +36,11 @@ function SweetCheckFinal(props) {
   useEffect(() => {
     if (socket) {
       socket.on('setOrder', (data) => {
-        
         if (data.idBilling === product.idBilling) {
           emit('sendMail', {
             to: product.email,
-            objet: `your command ${product.idBilling} is being sender`,
-            message: `your command ${product.idBilling} is being sender`,
+            objet: 'Your order has been sent !',
+            message: mailSent({}),
             res: 'confirmClientResMail',
             idBilling: product.idBilling
           }).then((v2) => {
@@ -71,8 +72,6 @@ function SweetCheckFinal(props) {
         status: 'delivered',
       },
     });
-
-    
   };
 
   const confirmAlert = () => {

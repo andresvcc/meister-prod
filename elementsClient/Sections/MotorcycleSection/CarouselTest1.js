@@ -43,7 +43,7 @@ setHover(newHover);
               onClick={() => (currentSlide <= 0 ? false : setCurrentSlide(currentSlide - 1))}
               style={{
                 position: 'absolute',
-                top: hookWidth > 600 ? '350px' : '300px',
+                top: hookWidth > 600 ? '350px' : '210px',
                 left: `${(hookWidth / 2.0) - (widhtMArg / 2)}px`,
                 zIndex: 9,
                 width: '1px',
@@ -61,7 +61,7 @@ setHover(newHover);
                 position: 'absolute',
                 right: `${(hookWidth / 2.02) - (widhtMArg / 2)}px`,
                 zIndex: 9,
-                top: hookWidth > 600 ? '350px' : '300px',
+                top: hookWidth > 600 ? '350px' : '210px',
                 width: '1px',
                 background: 'transparent'
               }}

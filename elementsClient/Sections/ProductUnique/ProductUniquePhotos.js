@@ -533,7 +533,7 @@ const ProductUnique = (props) => {
               <Div width="100%" style={{ paddingTop: '30px' }} horizontal="left" row>
                 {
                   selectableOptionsArr1.length > 1 ? (
-                    <Div width="34%" horizontal="left">
+                    <Div width="33%" horizontal="left">
                       <CustomOptions
                         label="Select option 1"
                         id="option1"

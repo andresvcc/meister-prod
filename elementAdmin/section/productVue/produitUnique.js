@@ -368,6 +368,7 @@ const ProductUnique = ({ product, setProductData }) => {
 
                 <Div width="100%" style={{ paddingTop: '30px' }} horizontal="left" row>
                   {
+                    // Select option 1 34 - Selection option 2 33
                       selectableOptionsArr1.length > 1 ? (
                         <Div width="34%" horizontal="left">
                           <CustomOptions

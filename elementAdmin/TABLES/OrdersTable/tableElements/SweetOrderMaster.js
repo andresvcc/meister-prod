@@ -4,11 +4,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import SweetAlert from 'react-bootstrap-sweetalert';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Button from '@/components/CustomButtons/Button';
-// react component used to create sweet alerts
-// material-ui components
 
 import styles2 from '@/assets/jss/nextjs-material-dashboard-pro/views/sweetAlertStyle';
 import SweetCheckOrder from './SweetCheckOrder';
+// react component used to create sweet alerts
+// material-ui components
+const mailTreating = require('../../../../socketOn/mail/treatment_mail');
 
 const useStyles2 = makeStyles(styles2);
 
@@ -93,8 +94,8 @@ function SweetCheckFinal(props) {
 
     await emit('sendMail', {
       to: product.email,
-      objet: `your command ${product.idBilling} is being treated`,
-      message: `your command ${product.idBilling} is being treated`,
+      objet: 'Your order is being treated',
+      message: mailTreating({}),
       res: 'confirmClientResMail',
       idBilling: product.idBilling
     });

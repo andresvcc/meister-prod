@@ -16,7 +16,7 @@ import defaultTypo from './TypographieType/defaultTypo';
 const proportion1 = (theme) => ({
   [theme.breakpoints.only('xs')]: {
     fontSize: '15px',
-    lineHeight: '1.3em'
+    lineHeight: '1.5em'
   },
   [theme.breakpoints.only('sm')]: {
     fontSize: '18px',
@@ -69,6 +69,18 @@ const proportion32 = (theme) => ({
   }
 });
 
+const proportion34 = (theme) => ({
+  [theme.breakpoints.only('xs')]: {
+    fontSize: '36px',
+  },
+  [theme.breakpoints.only('sm')]: {
+    fontSize: '46px',
+  },
+  [theme.breakpoints.only('xl')]: {
+    fontSize: '36px',
+  },
+});
+
 const proportion4 = (theme) => ({
   [theme.breakpoints.only('xs')]: {
     fontSize: '24px',
@@ -84,6 +96,19 @@ const proportion5 = (theme) => ({
 const proportion6 = (theme) => ({
   [theme.breakpoints.only('xs')]: {
     fontSize: '11px',
+  },
+});
+
+const proportionConf = (theme) => ({
+  [theme.breakpoints.only('xs')]: {
+    fontSize: '15px',
+    lineHeight: '35px'
+  },
+  [theme.breakpoints.only('sm')]: {
+    fontSize: '19px',
+  },
+  [theme.breakpoints.only('xl')]: {
+    fontSize: '19px',
   },
 });
 
@@ -213,6 +238,13 @@ const typographyStyle = (theme) => ({
     color: 'green',
     ...proportion6(theme),
   },
+
+  subtitle4Greens: {
+    fontFamily: 'Gorgia',
+    fontSize: '18px',
+
+    ...proportionConf(theme),
+  },
   // Email verification
   white: {
     color: 'white'
@@ -220,8 +252,15 @@ const typographyStyle = (theme) => ({
   // Home page - homepub
   testTypo: {
     fontFamily: 'NovaLight, sans serif',
-    fontSize: '20px',
+    fontSize: '17px',
     lineHeight: '1.5em',
+    ...proportion1(theme)
+  },
+  testTypo2: {
+    fontFamily: 'NovaLight, sans serif',
+    fontSize: '17px',
+    lineHeight: '1.5em',
+    textAlign: 'center',
     ...proportion1(theme)
   },
 
@@ -262,7 +301,6 @@ const typographyStyle = (theme) => ({
   },
   paragraph2: {
     fontSize: '14px'
-
   // Liens
   },
   link1: {

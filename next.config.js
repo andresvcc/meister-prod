@@ -43,6 +43,11 @@ module.exports = withPlugins([
   // })],
 ], {
   // webpack5: false,
+  compiler: {
+    removeConsole: {
+      exclude: ['error'],
+    },
+  },
   extends: ['eslint:recommended', 'next'],
   webpack(config, { dev }) {
     config.resolve.alias = { ...config.resolve.alias, 'react-pdf': 'react-pdf/dist/entry.noworker' };

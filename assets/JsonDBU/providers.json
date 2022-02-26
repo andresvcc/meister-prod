@@ -28,7 +28,39 @@
       "email": "andresvcc88@gmail.com",
       "iban": "0000 - 0000 - 0000 - 0000",
       "bic": "000000000000",
-      "orders": [],
+      "orders": [
+        {
+          "idBilling": "20022022_0",
+          "user": "alexiserne00@gmailcom",
+          "products": [
+            0,
+            1
+          ]
+        },
+        {
+          "idBilling": "21022022_1",
+          "user": "alexiserne00@gmailcom",
+          "products": [
+            0,
+            1
+          ]
+        },
+        {
+          "idBilling": "21022022_1",
+          "user": "alexiserne00@gmailcom",
+          "products": [
+            0,
+            1
+          ]
+        },
+        {
+          "idBilling": "21022022_2",
+          "user": "alexiserne00@gmailcom",
+          "products": [
+            0
+          ]
+        }
+      ],
       "date": "2021-08-24T05:13:52.865Z",
       "visible": "true"
     }

@@ -10,6 +10,11 @@
       }
     ]
   ],
+  "env": {
+    "production": {
+      "plugins": ["transform-remove-console"]
+    }
+  },
   "plugins": [
     "@babel/plugin-proposal-do-expressions",
     [

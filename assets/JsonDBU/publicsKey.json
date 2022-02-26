@@ -266,18 +266,195 @@
     }
   },
   "kzq0f8l9b*k+im8çc)rm": {
-    "age": "2022-02-16T20:31:35.229Z",
-    "ageUpdate": "2022-02-16T21:57:21.930Z",
+    "age": "2022-02-26T13:30:54.230Z",
+    "ageUpdate": "2022-02-26T13:30:54.230Z",
     "sessions": [
-      "NKV5Oek8gzqtv2pPAAAJ"
+      "sl24uHnOupk2xmmGAABA"
     ],
-    "login": "10223802746808348facebook"
+    "profilInfo": {
+      "registered": false,
+      "cartItems": {},
+      "favorite": {},
+      "viewed": {},
+      "marketing": {},
+      "addresses": {},
+      "orders": {},
+      "billings": {},
+      "currency": "CHF",
+      "language": "EN",
+      "countryTVA": "CH",
+      "tva": 0.077
+    }
   },
   "kzq0hnbufçjdh-shbp05": {
-    "age": "2022-02-16T20:33:27.642Z",
-    "ageUpdate": "2022-02-16T21:57:36.556Z",
+    "age": "2022-02-26T11:51:41.549Z",
+    "ageUpdate": "2022-02-26T13:30:13.772Z",
     "sessions": [
-      "EAa9B3NM4mhO6WihAAAL"
+      "zYQO4rODbXhhThAHAAAT",
+      "sPxY-ycd4GVaDeBkAABC"
+    ],
+    "profilInfo": {
+      "registered": false,
+      "cartItems": {
+        "3¦0¦0": {
+          "id": 3,
+          "color": 0,
+          "size": 0,
+          "qty": 1,
+          "photo": "/static/products/Summer Motorcycle Gloves_3_0_0_1623846218317_871.png",
+          "colorCode": "#f8daae",
+          "colorName": "Neutrals",
+          "sizeName": "8 ",
+          "opt1": 0,
+          "opt1Key1": "",
+          "opt2": 0,
+          "opt1Key2": "",
+          "opt3": 0,
+          "opt1Key3": "",
+          "packageSize": "void",
+          "name": "Summer Motorcycle Gloves_3",
+          "pathname": "/product/Summer Motorcycle Gloves_3"
+        },
+        "5¦0¦0": {
+          "id": 5,
+          "color": 0,
+          "size": 0,
+          "qty": 1,
+          "photo": "/static/products/Nano Rain Jacket_6_0_0_1629264197906_807.png",
+          "colorCode": "#313131",
+          "colorName": "Black",
+          "sizeName": "XS ",
+          "opt1": 0,
+          "opt1Key1": "",
+          "opt2": 0,
+          "opt1Key2": "",
+          "opt3": 0,
+          "opt1Key3": "",
+          "packageSize": "parcel_100x60x60_1kg",
+          "name": "Nano Rain Jacket_6",
+          "pathname": "/product/Nano Rain Jacket_6"
+        }
+      },
+      "favorite": {},
+      "viewed": {},
+      "marketing": {},
+      "addresses": {},
+      "orders": {},
+      "billings": {},
+      "currency": "CHF",
+      "language": "EN",
+      "countryTVA": "CH",
+      "tva": 0.077
+    }
+  },
+  "kzq28m51d)z*açiwaro": {
+    "age": "2022-02-16T21:22:25.430Z",
+    "ageUpdate": "2022-02-26T13:33:11.560Z",
+    "sessions": [
+      "XM_itE993It3lgF2AABM"
+    ],
+    "profilInfo": {
+      "currency": "CHF",
+      "language": "EN",
+      "countryTVA": "CH",
+      "tva": 0.077,
+      "registered": false,
+      "cartItems": {
+        "124¦0¦0": {
+          "id": 124,
+          "color": 0,
+          "size": 0,
+          "sizeValue": "",
+          "qty": 1,
+          "photo": "/static/products/Lithium Batterie for BMW R serie 7_124_0_0_1634819116406_625.png",
+          "colorCode": "transparent",
+          "colorName": "colourless",
+          "sizeName": " ",
+          "opt1": 0,
+          "opt1Key1": "",
+          "opt2": 0,
+          "opt1Key2": "",
+          "opt3": 0,
+          "opt1Key3": "",
+          "packageSize": "parcel_100x60x60_4kg",
+          "name": "Lithium Batterie for BMW R serie 7_124",
+          "pathname": "/product/Lithium Batterie for BMW R serie 7_124"
+        },
+        "2¦0¦0": {
+          "id": 2,
+          "color": 0,
+          "size": 0,
+          "qty": 1,
+          "photo": "/static/products/Meister Cap_2_0_0_1623838613309_858.png",
+          "colorCode": "#313131",
+          "colorName": "Black",
+          "sizeName": " ",
+          "opt1": 0,
+          "opt1Key1": "",
+          "opt2": 0,
+          "opt1Key2": "",
+          "opt3": 0,
+          "opt1Key3": "",
+          "packageSize": "void",
+          "name": "Meister Cap_2",
+          "pathname": "/product/Meister Cap_2"
+        }
+      },
+      "addresses": {},
+      "billings": {},
+      "favorite": {},
+      "viewed": {},
+      "marketing": {},
+      "orders": {}
+    }
+  },
+  "kzq2ad3bhsg?h52_1?6m": {
+    "age": "2022-02-16T21:23:47.015Z",
+    "ageUpdate": "2022-02-18T18:06:35.233Z",
+    "sessions": [
+      "1oWW0QSYI_qMZRifAABT"
+    ],
+    "profilInfo": {
+      "currency": "USD",
+      "language": "EN",
+      "countryTVA": "CH",
+      "tva": 0.077,
+      "registered": false,
+      "cartItems": {},
+      "addresses": {},
+      "billings": {},
+      "favorite": {},
+      "viewed": {},
+      "marketing": {},
+      "orders": {}
+    }
+  },
+  "kzq3nl5sr?e633_eç4!": {
+    "age": "2022-02-16T22:02:03.616Z",
+    "ageUpdate": "2022-02-16T22:13:48.166Z",
+    "sessions": [
+      "g1bdrxRYiMVif4AjAAA6"
+    ],
+    "profilInfo": {
+      "currency": "USD",
+      "language": "EN",
+      "countryTVA": "CH",
+      "tva": 0.077,
+      "registered": false,
+      "cartItems": {},
+      "addresses": {},
+      "billings": {},
+      "favorite": {},
+      "viewed": {},
+      "marketing": {},
+      "orders": {}
+    }
+  },
+  "kzq51qx6t?9!2!p1i%n+": {
+    "age": "2022-02-16T22:41:03.882Z",
+    "ageUpdate": "2022-02-16T22:41:59.028Z",
+    "sessions": [
+      "NWL_X4GLQbCPdZ0dAAA-"
     ],
     "profilInfo": {
       "currency": "CHF",
@@ -294,19 +471,78 @@
       "orders": {}
     }
   },
-  "kzq28m51d)z*açiwaro": {
-    "age": "2022-02-16T21:22:25.430Z",
-    "ageUpdate": "2022-02-16T21:58:12.123Z",
+  "kzv6eeepk1pfrfb!5*k!": {
+    "age": "2022-02-20T11:17:44.689Z",
+    "ageUpdate": "2022-02-26T11:05:00.769Z",
     "sessions": [
-      "d_N6OIeelQrpCz5uAAAR"
+      "Oj09aR183HaOPpzRAAEz"
     ],
     "profilInfo": {
-      "currency": "USD",
+      "currency": "CHF",
       "language": "EN",
       "countryTVA": "CH",
       "tva": 0.077,
       "registered": false,
-      "cartItems": {},
+      "cartItems": {
+        "1¦0¦0¦button plastic": {
+          "id": 1,
+          "color": 0,
+          "size": 0,
+          "qty": 1,
+          "photo": "/static/products/Resolve Motorcycle Boots_1_0_0_1624957128446_666.png",
+          "colorCode": "#c88a54",
+          "colorName": "Brown",
+          "sizeName": "39 - button plastic",
+          "opt1": 0,
+          "opt1Key1": "button plastic",
+          "opt2": 0,
+          "opt1Key2": "",
+          "opt3": 0,
+          "opt1Key3": "",
+          "packageSize": "parcel_100x60x60_4kg",
+          "name": "Resolve Motorcycle Boots_1",
+          "pathname": "/product/Resolve Motorcycle Boots_1"
+        },
+        "7¦3¦1": {
+          "id": 7,
+          "color": 3,
+          "size": 1,
+          "sizeValue": " S",
+          "qty": 2,
+          "photo": "",
+          "colorCode": "linear-gradient(-135deg,#fff572,#fff572 25%,#79ea9b 0,#79ea9b 40%,#5f9de6 0,#5f9de6 55%,#b469f5 0,#b469f5 70%,#f569d1 0,#f569d1)",
+          "colorName": "multicolor",
+          "sizeName": " S ",
+          "opt1": 0,
+          "opt1Key1": "",
+          "opt2": 0,
+          "opt1Key2": "",
+          "opt3": 0,
+          "opt1Key3": "",
+          "packageSize": "void",
+          "name": "Epicurist Clear Visor_8",
+          "pathname": "/product/Epicurist Clear Visor_8"
+        },
+        "2¦0¦0": {
+          "id": 2,
+          "color": 0,
+          "size": 0,
+          "qty": 1,
+          "photo": "/static/products/Meister Cap_2_0_0_1623838613309_858.png",
+          "colorCode": "#313131",
+          "colorName": "Black",
+          "sizeName": " ",
+          "opt1": 0,
+          "opt1Key1": "",
+          "opt2": 0,
+          "opt1Key2": "",
+          "opt3": 0,
+          "opt1Key3": "",
+          "packageSize": "void",
+          "name": "Meister Cap_2",
+          "pathname": "/product/Meister Cap_2"
+        }
+      },
       "addresses": {},
       "billings": {},
       "favorite": {},
@@ -315,14 +551,35 @@
       "orders": {}
     }
   },
-  "kzq2ad3bhsg?h52_1?6m": {
-    "age": "2022-02-16T21:23:47.015Z",
-    "ageUpdate": "2022-02-16T21:32:49.566Z",
+  "kzwn5hedfl0%u!2_k_2u": {
+    "age": "2022-02-26T12:18:03.703Z",
+    "ageUpdate": "2022-02-26T12:18:03.703Z",
     "sessions": [
-      "sFBrJsF0qBPQzXKAAABN"
+      "4IwGZmKiRZHCRcRcAAAq"
     ],
     "profilInfo": {
-      "currency": "USD",
+      "registered": false,
+      "cartItems": {},
+      "favorite": {},
+      "viewed": {},
+      "marketing": {},
+      "addresses": {},
+      "orders": {},
+      "billings": {},
+      "currency": "CHF",
+      "language": "EN",
+      "countryTVA": "CH",
+      "tva": 0.077
+    }
+  },
+  "kzz9npcf6tldz-xtv(r*": {
+    "age": "2022-02-23T08:00:02.319Z",
+    "ageUpdate": "2022-02-25T16:42:04.012Z",
+    "sessions": [
+      "4PQTymctF4zpUObiAAET"
+    ],
+    "profilInfo": {
+      "currency": "CHF",
       "language": "EN",
       "countryTVA": "CH",
       "tva": 0.077,

@@ -161,47 +161,47 @@ const MotorcycleSectionCard = memo(({ productPilot = [], filter }) => {
         ))}
         <GridItem num={[12, 12, 12, 12, 12]}>
           {
-            groups > 1 ? (
+  groups > 1 ? (
 
-              <Div width="100%" row style={{ padding: '20px 20px 20px 20px', marginTop: '20px' }}>
+    <Div width="100%" row style={{ padding: width < 600 ? '20px 0px 20px 0px' : '20px 20px 20px 20px', marginTop: '20px' }}>
 
-                {width > 600
-                  ? (
-                    <Button color="white" justIcon disabled={index[0] === 0} onClick={backToInit}>
-                      {'<<'}
-                    </Button>
-                  )
-                  : <Div />}
+      {width > 600
+        ? (
+          <Button color="white" justIcon disabled={index[0] === 0} onClick={backToInit}>
+            {'<<'}
+          </Button>
+        )
+        : <Div />}
 
-                <Button color="white" justIcon disabled={index[0] === 0} onClick={backIndex}>
-                  {'<'}
-                </Button>
+      <Button color="white" justIcon disabled={index[0] === 0} onClick={backIndex}>
+        {'<'}
+      </Button>
 
-                <Div row style={{ marginLeft: '20px', marginRight: '20px', padding: '20px 20px 20px 20px' }}>
-                  {
-                    [...new Array(groups)].map((val, i) => i).slice(indexGropup[0], indexGropup[1]).map((val) => (
-                      <Button color={(val + 1) === groupSelector ? 'primary' : 'white'} key={`${val + 1}`} style={{ marginLeft: '5px', marginRight: '5px' }} onClick={() => indexChange(val)}>
-                        {val + 1}
-                      </Button>
-                    ))
-                  }
-                </Div>
+      <Div row style={{ marginLeft: width < 600 ? '0px' : '20px', marginRight: width < 600 ? '0x' : '20px', padding: '20px 20px 20px 20px' }}>
+        {
+  [...new Array(groups)].map((val, i) => i).slice(indexGropup[0], indexGropup[1]).map((val) => (
+    <Button color={(val + 1) === groupSelector ? 'primary' : 'white'} key={`${val + 1}`} style={{ marginLeft: '5px', marginRight: '5px' }} onClick={() => indexChange(val)}>
+      {val + 1}
+    </Button>
+  ))
+  }
+      </Div>
 
-                <Button color="white" justIcon onClick={nextIndex} disabled={groupSelector >= groups}>
-                  {'>'}
-                </Button>
+      <Button color="white" justIcon onClick={nextIndex} disabled={groupSelector >= groups}>
+        {'>'}
+      </Button>
 
-                {width > 600
-                  ? (
-                    <Button color="white" justIcon disabled={groupSelector >= groups} onClick={nextToEnd}>
-                      {'>>'}
-                    </Button>
-                  )
-                  : <Div />}
-              </Div>
+      {width > 600
+        ? (
+          <Button color="white" justIcon disabled={groupSelector >= groups} onClick={nextToEnd}>
+            {'>>'}
+          </Button>
+        )
+        : <Div />}
+    </Div>
 
-            ) : null
-          }
+  ) : null
+  }
         </GridItem>
       </GridContainer>
     </Div>

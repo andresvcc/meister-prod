@@ -74765,5 +74765,136 @@
     "model": "R100S",
     "year": "1977",
     "dateOfModification": "2016-01-01"
+  },
+  "BMW k100_294": {
+    "id": 294,
+    "visibility": false,
+    "hidden": false,
+    "colors": [
+      {
+        "color": "#f07ed3",
+        "colorName": "Pink",
+        "photos": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "categorie": "Motorcycle",
+    "subcategorie": "Meister Motorcycles",
+    "genre": "",
+    "brand": "Meister",
+    "family": "",
+    "styleTextes": {
+      "EN": {
+        "text1": "",
+        "text2": "",
+        "text3": ""
+      }
+    },
+    "languages": {
+      "EN": {
+        "nameProduct": "BMW k100",
+        "description": "",
+        "details": [],
+        "characteristics": [],
+        "greatDescription": "",
+        "specialCare": "",
+        "content": [
+          {
+            "size": 4,
+            "item": {
+              "blocks": [
+                {
+                  "key": "69m64",
+                  "text": "Bonjour",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "inlineStyleRanges": [],
+                  "entityRanges": [],
+                  "data": {}
+                }
+              ],
+              "entityMap": {}
+            },
+            "index": 0
+          }
+        ],
+        "nameProduct_block": {
+          "blocks": [
+            {
+              "key": "h7tb",
+              "text": "BMW k100",
+              "type": "unstyled",
+              "depth": 0,
+              "inlineStyleRanges": [],
+              "entityRanges": [],
+              "data": {}
+            }
+          ],
+          "entityMap": {}
+        }
+      },
+      "FR": {
+        "nameProduct": "",
+        "description": "",
+        "details": [],
+        "characteristics": [],
+        "greatDescription": "",
+        "specialCare": "",
+        "content": []
+      },
+      "IT": {
+        "nameProduct": "",
+        "description": "",
+        "details": [],
+        "characteristics": [],
+        "greatDescription": "",
+        "specialCare": "",
+        "content": []
+      },
+      "DE": {
+        "nameProduct": "",
+        "description": "",
+        "details": [],
+        "characteristics": [],
+        "greatDescription": "",
+        "specialCare": "",
+        "content": []
+      }
+    },
+    "video": "",
+    "gallery": [],
+    "characteristics": "",
+    "selectableOptions1": "",
+    "selectableOptions2": "",
+    "selectableOptions3": "",
+    "price": "42000",
+    "currency": "CHF",
+    "delivery": [
+      "Post Suisse",
+      "All"
+    ],
+    "packageSize": "void",
+    "Homologation": [
+      "European Union",
+      "Switzerland"
+    ],
+    "Provider": [
+      "Meister"
+    ],
+    "index": 0,
+    "product": "BMW k100_294",
+    "tableData": {
+      "id": 0
+    },
+    "sizesType": "",
+    "clasificationColor": false,
+    "model": "BMW K100",
+    "year": "2022"
   }
 }
