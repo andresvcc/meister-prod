@@ -142,7 +142,7 @@ function Page(props) {
               {`Order Number ${billingsData && billingsData.idBilling && billingsData.idBilling}`}
             </Spam>
             <Spam type="BillingNumInfo">
-              {`Order status: ${orders[billingsData?.idBilling]?.status}`}
+              {`Order status: ${orders[billingsData?.idBilling]?.status ?? 'Processing'}`}
             </Spam>
             <Spam type="BillingNumInfo">
               {`Date of order: ${billingsData && billingsData.date && billingsData.date}`}
@@ -152,7 +152,6 @@ function Page(props) {
             </Spam>
             <Div height="40px" />
           </Div>
-
         </GridItem>
 
         <GridItem num={[5, 6, 6, 6, 6, 6]}>
