@@ -267,31 +267,19 @@
   },
   "kzq0f8l9b*k+im8çc)rm": {
     "age": "2022-02-26T13:30:54.230Z",
-    "ageUpdate": "2022-02-26T13:30:54.230Z",
+    "ageUpdate": "2022-02-26T13:59:13.116Z",
     "sessions": [
-      "sl24uHnOupk2xmmGAABA"
+      "Nmkj9hvrUETtTPXCAABW"
     ],
-    "profilInfo": {
-      "registered": false,
-      "cartItems": {},
-      "favorite": {},
-      "viewed": {},
-      "marketing": {},
-      "addresses": {},
-      "orders": {},
-      "billings": {},
-      "currency": "CHF",
-      "language": "EN",
-      "countryTVA": "CH",
-      "tva": 0.077
-    }
+    "login": "10223802746808348facebook"
   },
   "kzq0hnbufçjdh-shbp05": {
     "age": "2022-02-26T11:51:41.549Z",
-    "ageUpdate": "2022-02-26T13:30:13.772Z",
+    "ageUpdate": "2022-02-26T13:38:19.030Z",
     "sessions": [
       "zYQO4rODbXhhThAHAAAT",
-      "sPxY-ycd4GVaDeBkAABC"
+      "sPxY-ycd4GVaDeBkAABC",
+      "5cBVE2AUpJQ-yAnVAABS"
     ],
     "profilInfo": {
       "registered": false,
@@ -473,83 +461,11 @@
   },
   "kzv6eeepk1pfrfb!5*k!": {
     "age": "2022-02-20T11:17:44.689Z",
-    "ageUpdate": "2022-02-26T11:05:00.769Z",
+    "ageUpdate": "2022-02-26T13:59:34.546Z",
     "sessions": [
-      "Oj09aR183HaOPpzRAAEz"
+      "XVaGvCl-jyqZ_ChnAABa"
     ],
-    "profilInfo": {
-      "currency": "CHF",
-      "language": "EN",
-      "countryTVA": "CH",
-      "tva": 0.077,
-      "registered": false,
-      "cartItems": {
-        "1¦0¦0¦button plastic": {
-          "id": 1,
-          "color": 0,
-          "size": 0,
-          "qty": 1,
-          "photo": "/static/products/Resolve Motorcycle Boots_1_0_0_1624957128446_666.png",
-          "colorCode": "#c88a54",
-          "colorName": "Brown",
-          "sizeName": "39 - button plastic",
-          "opt1": 0,
-          "opt1Key1": "button plastic",
-          "opt2": 0,
-          "opt1Key2": "",
-          "opt3": 0,
-          "opt1Key3": "",
-          "packageSize": "parcel_100x60x60_4kg",
-          "name": "Resolve Motorcycle Boots_1",
-          "pathname": "/product/Resolve Motorcycle Boots_1"
-        },
-        "7¦3¦1": {
-          "id": 7,
-          "color": 3,
-          "size": 1,
-          "sizeValue": " S",
-          "qty": 2,
-          "photo": "",
-          "colorCode": "linear-gradient(-135deg,#fff572,#fff572 25%,#79ea9b 0,#79ea9b 40%,#5f9de6 0,#5f9de6 55%,#b469f5 0,#b469f5 70%,#f569d1 0,#f569d1)",
-          "colorName": "multicolor",
-          "sizeName": " S ",
-          "opt1": 0,
-          "opt1Key1": "",
-          "opt2": 0,
-          "opt1Key2": "",
-          "opt3": 0,
-          "opt1Key3": "",
-          "packageSize": "void",
-          "name": "Epicurist Clear Visor_8",
-          "pathname": "/product/Epicurist Clear Visor_8"
-        },
-        "2¦0¦0": {
-          "id": 2,
-          "color": 0,
-          "size": 0,
-          "qty": 1,
-          "photo": "/static/products/Meister Cap_2_0_0_1623838613309_858.png",
-          "colorCode": "#313131",
-          "colorName": "Black",
-          "sizeName": " ",
-          "opt1": 0,
-          "opt1Key1": "",
-          "opt2": 0,
-          "opt1Key2": "",
-          "opt3": 0,
-          "opt1Key3": "",
-          "packageSize": "void",
-          "name": "Meister Cap_2",
-          "pathname": "/product/Meister Cap_2"
-        }
-      },
-      "addresses": {},
-      "billings": {},
-      "favorite": {},
-      "viewed": {},
-      "marketing": {},
-      "orders": {}
-    }
+    "login": "alexiserne00@gmailcom"
   },
   "kzwn5hedfl0%u!2_k_2u": {
     "age": "2022-02-26T12:18:03.703Z",

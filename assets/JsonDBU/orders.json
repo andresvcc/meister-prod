@@ -200,6 +200,17 @@
       "payService": "Stripe",
       "payDate": "2022-02-24T15:29:53.542Z",
       "payDescription": "idBilling: 24022022_3"
+    },
+    "26022022_4": {
+      "status": "reception",
+      "idBilling": "26022022_4",
+      "dateOrder": "2022-02-26T13:59:34.070Z",
+      "user": "alexiserne00@gmailcom",
+      "pay": 662.36,
+      "payCode": "pi_3KXQo3BrPM02ixbU0SCEyEWM",
+      "payService": "Stripe",
+      "payDate": "2022-02-26T13:59:34.013Z",
+      "payDescription": "idBilling: 26022022_4"
     }
   }
 }
