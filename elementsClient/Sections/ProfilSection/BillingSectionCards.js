@@ -133,7 +133,7 @@ export default function CardProfile(props) {
               ? (
                 <Div horizontal="left" vertical="top" width="100%">
                   <Spam type="BillingNumInfo">
-                    {product.name}
+                    {product.name.slice(0, -2)}
                   </Spam>
                   <Spam type="BillingNumInfo">
                     {product.sizeName === ' '
@@ -308,7 +308,7 @@ export default function CardProfile(props) {
             ? (
               <Div horizontal="left" vertical="top" width="100%">
                 <Spam type="BillingNumInfo">
-                  {product.name}
+                  {product.name.slice(0, -2)}
                 </Spam>
                 <Spam type="BillingNumInfo">
                   {product.size === 0
@@ -320,11 +320,14 @@ export default function CardProfile(props) {
                     )}
                 </Spam>
                 <Spam type="BillingNumInfo">
-                  Quantity
+                  Quantity:
+                  {' '}
+                  {' '}
                   {product.qty}
                 </Spam>
                 <Spam type="BillingNumInfo">
                   {product?.currency}
+                  {': '}
                   {product?.price}
                 </Spam>
               </Div>

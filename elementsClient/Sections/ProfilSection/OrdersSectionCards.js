@@ -42,10 +42,9 @@ export default function CardProfile(props) {
         </Div>
 
         <Div horizontal="left" height="20px" width="100%" style={{ fontFamily: 'Gorgia', fontSize: '16px', textTransform: 'capitalize' }}>
-          {reduceString(`${product.name}`, 25)}
+          {reduceString(`${product.name}`.slice(0, -2), 25)}
 
         </Div>
-
         {product.sizeName === ' '
 
           ? <Div horizontal="left" height="20px" width="100%" style={{ fontFamily: 'Gorgia', fontSize: '16px' }} /> : (

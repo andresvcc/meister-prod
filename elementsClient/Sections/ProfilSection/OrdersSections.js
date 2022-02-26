@@ -19,8 +19,6 @@ const OrdersSection = React.memo(() => {
   const { billings = {} } = profilInfo;
   const billingListKeys = React.useMemo(() => Object.keys(billings), [billings]);
 
-  
-  
   const router = useRouter();
 
   const goToBilling = (id) => {
