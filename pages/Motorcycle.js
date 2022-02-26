@@ -238,7 +238,7 @@ function Pilot(props) {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
       </Head>
-      <div style={{ visibility: 'hidden' }}>
+      <div style={{ display: 'none' }}>
         <h1 style={{ visibility: 'hidden' }}>{seo.firstTitle}</h1>
         {
           seo.links.map((link) => (

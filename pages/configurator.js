@@ -27,31 +27,29 @@ function Page(props) {
         */
 
   return (
-    <Div width="100%" style={{ minHeight: `${height * 0.70}px`, background: 'white' }} vertical="top">
-      <Div height={type === 'mobile' ? 80 : 150} />
+    <Div dev width="100%" style={{ minHeight: `${height * 0.50}px`, background: 'white' }} vertical="top">
+      <Div dev height={type === 'mobile' ? 1 : 150} />
       <Div
         width="100%"
+        style={{ fontFamily: 'Georgia', fontSize: '18px' }}
       >
-        <Div
-          width="100%"
-          style={{ fontFamily: 'Georgia', fontSize: '18px' }}
-        >
-          Coming soon:
-
-        </Div>
-
-        <Div
-          width="100%"
-          style={{ fontFamily: 'Georgia', fontSize: '18px' }}
-        >
-          Design your future meister Motorcycle here!
-
-        </Div>
-        <Div width="500px" height="370px">
-          <Image src={imagine2 ?? '/static/images/notPhoto.png'} alt="..." width="600px" height="370px" />
-        </Div>
+        Coming soon:
 
       </Div>
+
+      <Div
+      dev
+        height="90%"
+        width="100%"
+        style={{ fontFamily: 'Georgia', fontSize: '17px', textAlign:'center' }}
+      >
+        Design your future meister Motorcycle here!
+
+      </Div>
+      <Div width="500px" height="370px">
+        <Image src={imagine2 ?? '/static/images/notPhoto.png'} alt="..." width="600px" height="370px" />
+      </Div>
+
     </Div>
   );
 }
@@ -66,7 +64,7 @@ function MadeToOrder(props) {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
       </Head>
-      <div style={{ visibility: 'hidden' }}>
+      <div style={{ display: 'none' }}>
         <h1 style={{ visibility: 'hidden' }}>{seo.firstTitle}</h1>
         {
           seo.links.map((link) => (

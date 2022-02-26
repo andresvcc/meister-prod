@@ -165,13 +165,15 @@ const MotorcycleSectionCard = memo(({ productPilot = [], filter }) => {
 
               <Div width="100%" row style={{ padding: '20px 20px 20px 20px', marginTop: '20px' }}>
 
-                {width > 600 ?  
-                <Button color="white" justIcon disabled={index[0] === 0} onClick={backToInit}>
-                  {'<<'}
-                </Button>
-                : <Div/>}
+                {width > 600
+                  ? (
+                    <Button color="white" justIcon disabled={index[0] === 0} onClick={backToInit}>
+                      {'<<'}
+                    </Button>
+                  )
+                  : <Div />}
 
-                <Button color="white"  justIcon disabled={index[0] === 0} onClick={backIndex}>
+                <Button color="white" justIcon disabled={index[0] === 0} onClick={backIndex}>
                   {'<'}
                 </Button>
 
@@ -189,11 +191,13 @@ const MotorcycleSectionCard = memo(({ productPilot = [], filter }) => {
                   {'>'}
                 </Button>
 
-                {width > 600 ?  
-                <Button color="white" justIcon disabled={groupSelector >= groups} onClick={nextToEnd}>
-                  {'>>'}
-                </Button>
-                  : <Div/>}
+                {width > 600
+                  ? (
+                    <Button color="white" justIcon disabled={groupSelector >= groups} onClick={nextToEnd}>
+                      {'>>'}
+                    </Button>
+                  )
+                  : <Div />}
               </Div>
 
             ) : null

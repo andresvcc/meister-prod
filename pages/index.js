@@ -27,8 +27,11 @@ const Index = React.memo((props) => {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
       </Head>
-      <div style={{ visibility: 'hidden', height: '0px' }}>
-        <h1 style={{ visibility: 'hidden' }}>{seo.firstTitle}</h1>
+      <div style={{
+        display: 'none', height: '200px', width: '100vw', background: 'red'
+      }}
+      >
+        <h1>{seo.firstTitle}</h1>
         {
           seo.links.map((link) => (
             <Link key={link} href={link} passHref>

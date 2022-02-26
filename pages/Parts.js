@@ -177,8 +177,8 @@ const PageMobile = ({ productList, categories }) => {
   };
 
   return (
-    <Div width="100%" style={{ minHeight: '90vh' }} vertical="top">
-      <Div height="150px" />
+    <Div width="100%" style={{ minHeight: '90vh' }} vertical="top" >
+      <Div height="100px" />
 
       <PilotScroll products={productList} categories={categories} setFilter={setFilter} filter={filter} categorie="Parts" />
 
@@ -353,7 +353,7 @@ function Parts(props) {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
       </Head>
-      <div style={{ visibility: 'hidden' }}>
+      <div style={{ display: 'none' }}>
         <h1 style={{ visibility: 'hidden' }}>{seo.firstTitle}</h1>
         {
           seo.links.map((link) => (
