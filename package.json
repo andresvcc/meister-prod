@@ -111,6 +111,7 @@
     "react-draft-wysiwyg": "^1.14.7",
     "react-easy-crop": "^3.3.1",
     "react-facebook": "^8.1.4",
+    "react-google-login": "^5.2.2",
     "react-iframe": "^1.8.0",
     "react-indiana-drag-scroll": "^1.8.0",
     "react-infinite-scroll-component": "^5.0.5",

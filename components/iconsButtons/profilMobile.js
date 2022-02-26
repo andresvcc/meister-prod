@@ -1,6 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 // Header - profil - Desktop
 import React, { useState, useEffect, useRef } from 'react';
+import GoogleLogin from 'react-google-login';
 import useMouseLeave from 'use-mouse-leave';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
@@ -14,7 +15,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import MenuList from '@material-ui/core/MenuList';
 import MenuItem from '@material-ui/core/MenuItem';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-import SocialLogin from 'react-social-login';
+// import SocialLogin from 'react-social-login';
 import Button from '@/components/CustomButtons/Button';
 import GridContainer from '@/components/Grid/GridContainer';
 import Spam from '@/components/Typography/Spam';
@@ -145,7 +146,7 @@ const SocialButtonGoogle = ({ children, triggerLogin, ...props }) => {
   );
 };
 
-const GoogleSocialLogin = SocialLogin(SocialButtonGoogle);
+// const GoogleSocialLogin = SocialLogin(SocialButtonGoogle);
 
 const ErrorMsg = ({ message, i }) => (message !== '' ? <Spam type="subtitle4" color="danger">{message}</Spam> : null);
 
@@ -263,17 +264,17 @@ export default function BagCardDialog(props) {
 
   const loginGoogle = (googleUser) => {
     const user = {
-      accessToken: googleUser._token.accessToken,
-      data_access_expiration_time: googleUser._token.expiresAt,
-      email: googleUser._profile.email,
-      expiresIn: googleUser._token.expiresIn,
-      graphDomain: googleUser._provider,
-      id: googleUser._profile.id,
-      name: googleUser._profile.name,
-      provider: googleUser._provider,
-      signedRequest: googleUser._token.idToken,
+      accessToken: googleUser.accessToken,
+      data_access_expiration_time: googleUser.tokenObj.expires_at,
+      email: googleUser.profileObj.email,
+      expiresIn: googleUser.tokenObj.expires_in,
+      graphDomain: googleUser.tokenObj.scope,
+      id: googleUser.googleId,
+      name: googleUser.profileObj.name,
+      provider: 'google',
+      signedRequest: googleUser.tokenObj.id_token,
       status: 'connected',
-      userID: googleUser._profile.id,
+      userID: googleUser.profileObj.googleId,
     };
 
     setSocialLogin(user);
@@ -413,7 +414,7 @@ export default function BagCardDialog(props) {
           width: '100vw',
           height: '100vh',
           top: 0,
-          zIndex: 99999999999999,
+          zIndex: 99999999999999999,
           right: '0px',
           paddingBottom: '5px',
           display: 'flex',
@@ -421,7 +422,7 @@ export default function BagCardDialog(props) {
           background: 'white',
           justifyContent: 'center',
           visibility: open || hover || openActive ? 'visible' : 'hidden',
-          paddingTop: 80
+          paddingTop: 0
         }}
       >
         <div ref={ref}>
@@ -430,7 +431,7 @@ export default function BagCardDialog(props) {
             <GridItem num={[12, 12, 12, 12, 12]}>
               <Div width="90%" horizontal="left" style={{ fontFamily: 'GorgiaLight' }}>
                 <Div width="100%" horizontal="at" row>
-                  <Div>
+                  <Div style={{ fontFamily: 'GorgiaLight' }}>
                     My Account
                   </Div>
                   <Div
@@ -483,12 +484,26 @@ export default function BagCardDialog(props) {
                 <Spam type="subtitle3">OR</Spam>
 
                 <SocialButton title="Continue with Facebook" image={facebookIcon} onClick={loginFacebook} />
-                <GoogleSocialLogin
-                  provider="google"
-                  appId="52138817195-8h3925qg2rffhl8j6sl8uvbdsi32m762.apps.googleusercontent.com"
-                  onLoginSuccess={loginGoogle}
-                  onLoginFailure={(a) => console.log('asd', a)}
+
+                <GoogleLogin
+                  clientId="52138817195-8h3925qg2rffhl8j6sl8uvbdsi32m762.apps.googleusercontent.com"
+                  buttonText="Login"
+                  onSuccess={loginGoogle}
+                  onFailure={(a) => console.log('GOOGLE ERROR', a)}
+                  cookiePolicy="single_host_origin"
+                  render={(renderProps) => (
+                    <SocialButton disabled={renderProps.disabled} title="Continue with Google" image={googleIcon} onClick={renderProps.onClick} />
+                  )}
                 />
+
+                {/*
+                  <GoogleSocialLogin
+                    provider="google"
+                    appId="52138817195-8h3925qg2rffhl8j6sl8uvbdsi32m762.apps.googleusercontent.com"
+                    onLoginSuccess={loginGoogle}
+                    onLoginFailure={(a) => console.log('asd', a)}
+                  />
+                */}
 
                 <div
                   style={{
