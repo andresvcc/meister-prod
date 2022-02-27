@@ -233,7 +233,7 @@ const typographyStyle = (theme) => ({
     ...proportion6(theme),
   },
   subtitle4Green: {
-    fontSize: '14px',
+    fontSize: '18px',
     fontWeight: '500',
     color: 'green',
     ...proportion6(theme),

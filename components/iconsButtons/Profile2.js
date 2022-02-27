@@ -329,7 +329,7 @@ export default function BagCardDialog(props) {
                 background: 'transparent',
                 position: 'absolute',
                 top: 35,
-                right: 0,
+                right: -8,
                 paddingBottom: '5px'
               }}
             >

@@ -457,11 +457,11 @@ io.on('connection', (socket) => {
     //
     .on('disconnecting', () => {
       const [publickey, elements] = getPublicKeyNameFun(io, socket);
-      const index = elements.indexOf(socket.id);
-      const temp = elements.splice(index, 1);
+      const temp = elements.filter((key) => key !== socket.id);
 
       const user = publicsKeyJson.get(publickey);
       if (user !== undefined) {
+        console.log(temp);
         return publicsKeyJson.set(`${publickey}.sessions`, temp);
       }
 
@@ -513,6 +513,21 @@ nextApp.prepare().then(() => {
   app.get('/static/categorie/:photoName', (req, res) => {
     const filePath = join(__dirname, '/public/static/categorie/', req.params.photoName);
     res.sendFile(filePath);
+  });
+
+  app.get('/cleansession', (req, res) => {
+    const publicsKeys = publicsKeyJson.read();
+
+    const keys = Object.entries(publicsKeys).filter(([key, { sessions = [] }]) => sessions.length === 0);
+
+    keys.forEach(([key, values]) => {
+      publicsKeyJson.unset(key);
+    });
+
+    const publicsKeysRes = publicsKeyJson.read();
+    publicsKeyJson.save();
+
+    res.status(200).json({ publicsKeysRes });
   });
 
   app.get('*', (req, res) => nextHandler(req, res));

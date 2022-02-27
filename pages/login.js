@@ -5,6 +5,7 @@ import useSocket from 'useSocket';
 import nextCookies from 'next-cookies';
 import LoginElement from 'elementsClient/Sections/Login/LoginElement';
 import RegisterElement from 'elementsClient/Sections/Login/RegisterElement';
+import SuccesRegister from 'elementsClient/Sections/Login/succesRegister';
 import ForgotPasswordElement from 'elementsClient/Sections/Login/ForgotPassElement';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -81,6 +82,10 @@ export default function ConnexionSection(props) {
     } else {
       setErrorApi([]);
       setLoading(false);
+      router.push({
+        pathname: '/login',
+        query: { option: 'register-success' },
+      });
     }
   };
 
@@ -132,6 +137,7 @@ export default function ConnexionSection(props) {
           {params === 'login' || !params ? (<LoginElement goingTo={goingTo} submit={login} errorsApi={errorApiLogin} />) : null }
           {params === 'register' ? (<RegisterElement goingTo={goingTo} submit={register} errorsApi={errorsApi} validate={validateRegister} />) : null }
           {params === 'recovery' ? <ForgotPasswordElement goingTo={goingTo} submit={recovery} errorsApi={errorsApiRecovery} validate={validateRecovery} /> : null}
+          {params === 'register-success' ? (<SuccesRegister goingTo={goingTo} submit={register} errorsApi={errorsApi} validate={validateRegister} />) : null }
 
         </Body>
       </main>
