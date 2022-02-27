@@ -162,7 +162,7 @@ const Default2 = ({ children, parallaxImage, barnerImage, parallaxVideo, barnerC
   }
 
   if (width === 0) return <></>;
-  if ((type === 'mobile' || type === 'tablet') && (width < 850)) return <Mobile {...{ children, parallaxImage, barnerImage, parallaxVideo, useSocketHook }} />;
+  if ((type === 'mobile' || type === 'tablet') || (width < 850)) return <Mobile {...{ children, parallaxImage, barnerImage, parallaxVideo, useSocketHook }} />;
   return (
     <Desktop {...{ children, parallaxImage, barnerImage, parallaxVideo, barnerComponent, useSocketHook }} />
   );

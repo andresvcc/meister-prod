@@ -329,7 +329,7 @@ export default function BagCardDialog(props) {
                 background: 'transparent',
                 position: 'absolute',
                 top: 35,
-                right: -8,
+                right: '10px',
                 paddingBottom: '5px'
               }}
             >
@@ -385,7 +385,7 @@ export default function BagCardDialog(props) {
           background: 'transparent',
           position: 'absolute',
           top: 35,
-          right: 'calc(-50% + 10px)',
+          right: 'calc(-50% + 58px)',
           paddingBottom: '5px',
           visibility: open || hover || openActive ? 'visible' : 'hidden'
         }}

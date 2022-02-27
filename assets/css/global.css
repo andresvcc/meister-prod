@@ -206,8 +206,8 @@ header {
   width: 20%;
   max-width: 350px;
   position: fixed;
-  background: white;
-  bottom: 120px;
+  background: rgb(255, 255, 255);
+  bottom: 495px;
   transition: 'all ease .3s'
 }
 
@@ -831,13 +831,13 @@ select:-webkit-autofill:focus {
   content: '';
   position: absolute;
   top: -28px;
-  right: 98px;
+  right: 68px;
   border: 14px solid transparent;
   border-bottom-color: #979595;
 }
 
 .dialogContaineProfile:after {
-  right: 97px;
+  right: 67px;
   top: -27.8px;
   border: 15px solid transparent;
   border-bottom-color: #ffffff;
@@ -895,13 +895,13 @@ select:-webkit-autofill:focus {
   content: '';
   position: absolute;
   top: -28px;
-  right: 64px;
+  right: 14px;
   border: 14px solid transparent;
   border-bottom-color: #979595;
 }
 
 .dialogContainer:after {
-  right: 64px;
+  right: 14px;
   top: -27px;
   border: 14px solid transparent;
   border-bottom-color: #ffffff;

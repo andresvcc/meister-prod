@@ -47,16 +47,14 @@ const FilterPlace = ({
 }) => (
   <Div width="100%">
     <Div width="100%" row horizontal="at" style={{ marginBottom: '4px' }} onClick={() => setOpen(open === keyName ? '' : keyName)}>
-      <Div horizontal="left" row={mobile}>
+      <Div horizontal="left" row>
         <span style={{ textTransform: 'capitalize', marginLeft: '15px', fontFamily: 'GorgiaLight' }}>{title}</span>
-        <Div>
-          <span style={{
-            textTransform: 'capitalize', color: '#9a9a9a', marginLeft: '15px', fontFamily: 'GorgiaLight'
-          }}
-          >
-            {selected === 'none' ? 'All' : `${selected}`.replaceAll('¦', ', ')}
-          </span>
-        </Div>
+        <span style={{
+          textTransform: 'capitalize', marginLeft: '15px', fontFamily: 'GorgiaLight', color: 'gray'
+        }}
+        >
+          {selected === 'none' ? 'All' : `${selected}`.replaceAll('¦', ', ')}
+        </span>
       </Div>
       <ExpandMoreIcon style={{ transform: open === keyName ? 'rotate(-180deg)' : 'rotate(0deg)', transition: 'transform ease .3s' }} />
     </Div>
@@ -106,17 +104,17 @@ const FilterPrice = ({
 }) => (
   <Div width="100%">
     <Div width="100%" row horizontal="at" style={{ marginBottom: '3px' }} onClick={() => setOpen(open === 'price' ? '' : 'price')}>
-      <Div horizontal="left" row={mobile}>
+      <Div horizontal="left" row>
         <span style={{ textTransform: 'capitalize', marginLeft: '15px', fontFamily: 'GorgiaLight' }}>Price</span>
-        <Div>
-          <span style={{
-            textTransform: 'capitalize', color: '#9a9a9a', marginLeft: '15px', fontFamily: 'GorgiaLight'
-          }}
-          >
-            {priceMin === 'none' && priceMax === 'none' ? 'All' : `${priceMin === 'none' ? 'All' : priceMin} - ${priceMax === 'none' ? 'All' : priceMax}`}
-          </span>
-        </Div>
+
+        <span style={{
+          textTransform: 'capitalize', color: '#9a9a9a', marginLeft: '15px', fontFamily: 'GorgiaLight'
+        }}
+        >
+          {priceMin === 'none' && priceMax === 'none' ? 'All' : `${priceMin === 'none' ? 'All' : priceMin} - ${priceMax === 'none' ? 'All' : priceMax}`}
+        </span>
       </Div>
+
       <ExpandMoreIcon style={{ transform: open === 'price' ? 'rotate(-180deg)' : 'rotate(0deg)', transition: 'transform ease .3s' }} />
     </Div>
     <Div width="100%" height={open === 'price' ? '90px' : '0px'} style={{ overflowY: 'hidden', transition: 'height ease .3s' }}>
@@ -213,7 +211,7 @@ const Categorie = memo(({
         width="100%"
         horizontal="left"
         style={{
-          marginBottom: '6px', borderBottom: '1px solid #d4d4d4', paddingTop: '25px', paddingBottom: '15px', paddingLeft: '15px', fontFamily: 'GorgiaLight'
+          marginBottom: '6px', borderBottom: '1px solid #d4d4d4', paddingTop: '10px', paddingBottom: '15px', paddingLeft: '15px', fontFamily: 'GorgiaLight'
         }}
       >
         {`${productPilot.length} Results`}

@@ -156,9 +156,10 @@ const Page = memo(({ productList, categories }) => {
       ref.current.className = 'filterBLockFixed';
       return;
     }
+
     if (window.innerHeight - 528 - ref.current.clientHeight < 150 && window.pageYOffset - (scrollHeight - window.innerHeight) >= 0 && ref.current.className === 'filterBLockFixed') {
+      console.log('block bottom');
       ref.current.className = 'filterBLockFixedBottom';
-      ref.current.style.bottom = `${443}px`;
     }
   }
 

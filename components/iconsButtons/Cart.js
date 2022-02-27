@@ -207,7 +207,7 @@ export default function BagCardDialog() {
               background: 'transparent',
               position: 'absolute',
               top: 35,
-              right: 'calc(-50% + 10px)',
+              right: 'calc(-50% + 65px)',
               paddingBottom: '5px'
             }}
           >

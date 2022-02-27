@@ -1,16 +1,19 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import { hookDeviceInfo, redux } from 'component';
 import Logo from '@/components/layouts/headerMobile/logo';
 import Menu from '@/components/layouts/headerMobile/Menu';
-import Icons from '@/components/layouts/headerMobile/Icons';
+import MobileIcons from '@/components/layouts/headerMobile/Icons';
+import DesktopIcons from '@/components/layouts/headerDescktop/Icons';
 
 const HeaderMobile = memo(({ useSocketHook }) => {
-  const y = 0;
+  const { type = 'browser', width } = hookDeviceInfo();
+
   return (
     <div className="contenCenter">
       <Menu />
       <Logo />
-      <Icons useSocketHook={useSocketHook} />
+      {(type === 'mobile' || type === 'tablet') ? <MobileIcons useSocketHook={useSocketHook} /> : <DesktopIcons useSocketHook={useSocketHook} />}
     </div>
   );
 });
