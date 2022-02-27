@@ -13,7 +13,7 @@ const Scroll = memo(({ products }) => {
   const router = useRouter();
   const { width } = hookDeviceInfo();
   const [{ profilInfo, tva }, dispatch] = redux();
-  const { cartItems } = profilInfo;
+  const { cartItems = {} } = profilInfo;
 
   const smallSize = width > 600;
   const lenght = products.length;

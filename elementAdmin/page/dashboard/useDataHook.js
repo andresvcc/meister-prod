@@ -101,10 +101,10 @@ const useData = () => {
 
   // sales
   // 1. Chiffre d'affair par mois
-  const sales = deepFlatten(Object.values(users).map(({ billings }) => Object.values(billings).map(({ products }) => products.map(({ qty, price, date }) => ({ month: new Date(date).getUTCMonth(), amount: qty * price })))));
+  const sales = deepFlatten(Object.values(users).map(({ billings }) => Object.values({ ...billings }).map(({ products }) => products.map(({ qty, price, date }) => ({ month: new Date(date).getUTCMonth(), amount: qty * price })))));
   const monthSalesAide = Object.entries(groupByKey(sales, 'month')).map(([key, value]) => ({ [key]: [...value.map(({ amount }) => amount), 0, 0].reduce((a, b) => a + b) }));
   const monthSales = [...monthSalesAide, {}, {}].reduce((a, b) => ({ ...a, ...b }));
-  const totalSales = [...deepFlatten(Object.values(users).map(({ billings }) => Object.values(billings).map(({ products }) => products.map(({ qty, price }) => qty * price)))), 0, 0].reduce((a, b) => a + b);
+  const totalSales = [...deepFlatten(Object.values(users).map(({ billings }) => Object.values({ ...billings }).map(({ products }) => products.map(({ qty, price }) => qty * price)))), 0, 0].reduce((a, b) => a + b);
   const monthSalesTotal = monthNAmes.map((name, i) => ({ [name]: monthSales[i] || 0 })).reduce((a, b) => ({ ...a, ...b }));
 
   return {
