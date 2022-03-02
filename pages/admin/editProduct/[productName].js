@@ -155,7 +155,7 @@ function AddProductPage({
       'Product Data': 0
     });
 
-    const productKey = `${product.product}`;
+    const productKey = `${product.product}`.replaceAll(' ', '_');
 
     const productTemp = { ...product };
     const productGalleryTemp = { ...product.gallery };
@@ -182,7 +182,7 @@ function AddProductPage({
             file: contents
           });
 
-          return `/static/products/${uploadImage1[0].filename.replaceAll(' ', '20%')}`;
+          return `/static/products/${uploadImage1[0].filename}`;
         } return file;
       }));
       setValueTask(100, icolor);

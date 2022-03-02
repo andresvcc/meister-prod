@@ -20,7 +20,7 @@ const MotorcycleSectionCard = memo(({ productPilot = [], filter }) => {
   };
 
   return (
-    <Div width="100%" dev >
+    <Div width="100%">
       <Div width="100%" />
       <Grid container alignItems="center" justifyContent="flex-start" spacing={5}>
         {productPilot.map((val, i) => (

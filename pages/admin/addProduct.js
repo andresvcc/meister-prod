@@ -153,7 +153,7 @@ function AddProductPage(props) {
     });
 
     const index = Object.keys(productList).length;
-    const productKey = `${product.languages.EN.nameProduct}_${index}`;
+    const productKey = `${product.languages.EN.nameProduct}_${index}`.replaceAll(' ', '_');
     const productTemp = { ...product };
     // const colors = await all(productTemp);
 
@@ -194,9 +194,11 @@ function AddProductPage(props) {
       value: pr,
     });
 
-    setSubmitProcess({ ...submitProcess, 'Product Data': 100 });
+    setProductData({
+      ...product, colors: productPhotos, product: productKey, productKey, id: index, gallery: galleryUpload
+    });
 
-    // router.push('/admin/listproducts');
+    setSubmitProcess({ ...submitProcess, 'Product Data': 100 });
   };
 
   const closeDialogSave = () => {
@@ -206,6 +208,8 @@ function AddProductPage(props) {
     });
 
     setOpenDialog(false);
+
+    router.push(`/admin/editProduct/${product.productKey}`);
   };
 
   const closeDialogFinis = () => {
