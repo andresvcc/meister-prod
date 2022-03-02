@@ -169,7 +169,7 @@ function AddProductPage({
           url: `/upload/${productKey}_GALLERY_${iphoto}`,
           file: contents
         });
-        return `/static/products/${uploadImage1[0].filename}`;
+        return `/photo/static/products/${uploadImage1[0].filename}`;
       } return file;
     }));
 
@@ -182,7 +182,7 @@ function AddProductPage({
             file: contents
           });
 
-          return `/static/products/${uploadImage1[0].filename}`;
+          return `/photo/static/products/${uploadImage1[0].filename}`;
         } return file;
       }));
       setValueTask(100, icolor);

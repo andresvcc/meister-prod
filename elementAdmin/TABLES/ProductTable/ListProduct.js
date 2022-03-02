@@ -188,19 +188,19 @@ const data1 = {
 
 function OrdersTables(props) {
   const addRow = (data) => {
-    
+
   };
 
   const editRow = (data) => {
-    
+
   };
 
   const delRow = (data) => {
-    
+
   };
 
   const visivilityRow = (data) => {
-    
+
   };
 
   return (

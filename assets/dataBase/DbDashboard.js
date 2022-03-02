@@ -19,19 +19,19 @@ const dbDashboard = {
   // le nombre de commandes par pays
   // pourcentage d'augmentation des ventes dans les derniers 30 jours
   salesByLocation: [[
-    <Image src={usFlag ?? '/static/images/notPhoto.png'} alt="usFlag" key="flag" />,
+    <Image src={usFlag ?? 'photo/static/images/notPhoto.png'} alt="usFlag" key="flag" />,
     'USA',
     '2.920',
     '53.23%',
   ],
   [
-    <Image src={deFlag ?? '/static/images/notPhoto.png'} alt="usFlag" key="flag" />,
+    <Image src={deFlag ?? 'photo/static/images/notPhoto.png'} alt="usFlag" key="flag" />,
     'Germany',
     '1.300',
     '20.43%',
   ],
   [
-    <Image src={auFlag ?? '/static/images/notPhoto.png'} alt="usFlag" key="flag" />,
+    <Image src={auFlag ?? 'photo/static/images/notPhoto.png'} alt="usFlag" key="flag" />,
     'Australia',
     '760',
     '10.35%',

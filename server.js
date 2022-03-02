@@ -480,16 +480,16 @@ io.on('connection', (socket) => {
 });
 
 nextApp.prepare().then(() => {
-  app.get((req, res) => {
-    const parsedUrl = parse(req.url, true);
-    const { pathname } = parsedUrl;
-    if (pathname === '/service-worker') {
-      const filePath = join(__dirname, '.next', pathname);
-      app.serveStatic(req, res, filePath);
-    } else {
-      nextHandler(req, res, parsedUrl);
-    }
-  });
+  // app.get((req, res) => {
+  //   const parsedUrl = parse(req.url, true);
+  //   const { pathname } = parsedUrl;
+  //   if (pathname === '/service-worker') {
+  //     const filePath = join(__dirname, '.next', pathname);
+  //     app.serveStatic(req, res, filePath);
+  //   } else {
+  //     nextHandler(req, res, parsedUrl);
+  //   }
+  // });
 
   app.use('/upload', upload);
   app.use('/uploadimage', uploadImage);
@@ -505,12 +505,27 @@ nextApp.prepare().then(() => {
     res.sendFile(filePath);
   });
 
+  app.get('/photo/static/products/:photoName', (req, res) => {
+    const filePath = join(__dirname, '/public/static/products/', req.params.photoName);
+    res.sendFile(filePath);
+  });
+
   app.get('/static/images/:photoName', (req, res) => {
     const filePath = join(__dirname, '/public/static/images/', req.params.photoName);
     res.sendFile(filePath);
   });
 
+  app.get('/photo/static/images/:photoName', (req, res) => {
+    const filePath = join(__dirname, '/public/static/images/', req.params.photoName);
+    res.sendFile(filePath);
+  });
+
   app.get('/static/categorie/:photoName', (req, res) => {
+    const filePath = join(__dirname, '/public/static/categorie/', req.params.photoName);
+    res.sendFile(filePath);
+  });
+
+  app.get('/photo/static/categorie/:photoName', (req, res) => {
     const filePath = join(__dirname, '/public/static/categorie/', req.params.photoName);
     res.sendFile(filePath);
   });

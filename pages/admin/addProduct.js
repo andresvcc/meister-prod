@@ -165,7 +165,7 @@ function AddProductPage(props) {
           url: `/upload/${productKey}_${icolor}_${iphoto}`,
           file: contents
         });
-        return `/static/products/${uploadImage1[0].filename}`;
+        return `/photo/static/products/${uploadImage1[0].filename}`;
       }));
       setValueTask(100, icolor);
       return { color: color.color, colorName: color.colorName, photos: tt };
@@ -178,7 +178,7 @@ function AddProductPage(props) {
         url: `/upload/${productKey}_GALLERY_${iphoto}`,
         file: contents
       });
-      return `/static/products/${uploadImage1[0].filename}`;
+      return `/photo/static/products/${uploadImage1[0].filename}`;
     }));
 
     const pr = {

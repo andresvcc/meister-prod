@@ -30,9 +30,9 @@ export default function MotorcycleCard(props) {
 
         <Div onHover={(hover) => setHover(hover)}>
 
-          <Div>
+          <Div style={{ userSelect: 'text' }}>
             <a href="#pablo" onClick={(e) => e.preventDefault()}>
-              <Image src={(motorcycle?.colors[0]?.photos[0]) ?? '/static/images/notPhoto.png'} alt="..." width="350px" height="250px" className={classes.photoProductMotorcycle} />
+              <Image src={`${process.env.IMAGEPROVIDER}${(motorcycle?.colors[0]?.photos[0]) ?? '/static/images/notPhoto.png'}`} alt="..." width="350px" height="250px" className={classes.photoProductMotorcycle} />
             </a>
           </Div>
 
