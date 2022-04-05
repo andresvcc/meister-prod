@@ -27,7 +27,6 @@ const Page = React.memo(({ productListPilot, productListParts }) => (
   <Div width="100%" vertical="top">
 
     <Divider />
-    {process.env.NODE_ENV}
     <HomePub />
     <Divider />
     <CategoriesImages />
