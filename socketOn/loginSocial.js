@@ -77,12 +77,18 @@ const register = async (io, socket, data, users, publicsKeyJson, validateCodes) 
       billings: { ...dataSessionKey.profilInfo.billings, ...user.billings },
     };
 
+    console.log('fussionSession', fussionSession);
+
     await users.set(`${idNewUser}`, {
       ...fussionSession,
     });
 
+    await io.to(publickey).emit('dispatch', { state: 'profilInfo', value: { ...fussionSession, password: null } });
+    await socket.emit('profilInfo', { state: 'profilInfo', value: { ...fussionSession, password: null } });
     await socket.emit('loginRes', { ok: true, profilInfo: { ...fussionSession, password: null } });
+
     // const mailGenerator = mailRegister({ linkCode });
+
     const username = newUser.fname;
     const resultsMail = await EmailCtrl.sendEmail({
       email: newUser.email, // <- adresse e-mail de l'utilisateur
@@ -90,6 +96,8 @@ const register = async (io, socket, data, users, publicsKeyJson, validateCodes) 
       // corps du message ...  vous ne pouvez pas utiliser javascript dans le corps mais css
       message: mailRegister({ linkCode, username })
     });
+
+    console.log('register user', JSON.stringify(fussionSession.user, null, 2));
   } else {
     socket.emit('registreRes', { err: 'The userID already exists' });
   }
@@ -114,7 +122,7 @@ const login = async (io, socket, data, users, publicsKeyJson, validateCodes, ord
           login: idUser,
         });
 
-        const fussionSession = {
+        const fussionSession = await {
           ...user,
           registered: true,
           currency: dataSessionKey?.profilInfo?.currency || user.currency || 'USD',
@@ -139,7 +147,10 @@ const login = async (io, socket, data, users, publicsKeyJson, validateCodes, ord
         // const newProfileInfo = publicsKeyJson.get(`${publickey}.profilInfo`);
         // const updatedProfileInfo = { ...newProfileInfo, ...data.value };
         await io.to(publickey).emit('dispatch', { state: 'profilInfo', value: { ...fussionSession, password: null } });
+        await socket.emit('profilInfo', { state: 'profilInfo', value: { ...fussionSession, password: null } });
         await socket.emit('loginRes', { ok: true, profilInfo: { ...fussionSession, password: null } });
+
+        console.log('login user', JSON.stringify(fussionSession.user, null, 2));
       } else {
         socket.emit('loginRes', { err: 'Your userID or email does not exist 1' });
       }
