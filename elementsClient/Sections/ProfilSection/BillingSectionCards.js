@@ -123,7 +123,7 @@ export default function CardProfile(props) {
 
           <GridItem num={[4, 2, 2, 2, 2]}>
             <Div height="150px" width="225px" style={{ background: '#00000010', position: 'relative' }}>
-              <Image src={`${product.photo}`} alt="..." className="boxCardImage" layout="fill" />
+              <Image src={`${process.env.IMAGEPROVIDER}${product.photo}`} alt="..." className="boxCardImage" layout="fill" />
             </Div>
           </GridItem>
 

@@ -56,16 +56,18 @@ const PartsSVG = ({ onClick = () => false, useSelector: [selector, setSelector] 
     </defs>
     <g id="Layer_x0020_1">
       <metadata id="CorelCorpID_0Corel-Layer" />
-      <g className="imgParts" clipPath="url(#id0)" onClick={() => onClick('Train')}>
+      <g className="imgParts" clipPath="url(#id0)" onClick={() => onClick('Chassis')}>
         <image id="Object_x0020_1" x="350" y="1304" width="2794" height="689" xlinkHref="/static/categorie/final3_ImgID1.png" />
       </g>
       <g className="imgParts" onClick={() => onClick('Engine')}>
         <g clipPath="url(#id1)">
           <image id="Object_x0020_1_0" x="1699" y="775" width="832" height="1146" xlinkHref="/static/categorie/final3_ImgID2.png" />
         </g>
+
         <g clipPath="url(#id2)">
           <image id="Object_x0020_2" x="2296" y="1556" width="291" height="161" xlinkHref="/static/categorie/final3_ImgID3.png" />
         </g>
+
       </g>
       <g className="imgParts" clipPath="url(#id3)" onClick={() => onClick('Exhaust')}>
         <image id="Object_x0020_1_1" x="1231" y="1259" width="615" height="679" xlinkHref="/static/categorie/final3_ImgID4.png" />
@@ -83,9 +85,11 @@ const PartsSVG = ({ onClick = () => false, useSelector: [selector, setSelector] 
         <g clipPath="url(#id7)">
           <image id="Object_x0020_1_5" x="1047" y="89" width="1781" height="464" xlinkHref="/static/categorie/final3_ImgID8.png" />
         </g>
+
         <g clipPath="url(#id8)">
           <image id="Object_x0020_1_6" x="244" y="117" width="841" height="323" xlinkHref="/static/categorie/final3_ImgID9.png" />
         </g>
+
       </g>
       <g className="imgParts" clipPath="url(#id9)" onClick={() => onClick('Electrics')}>
         <image id="Object_x0020_1_7" x="323" y="376" width="570" height="918" xlinkHref="/static/categorie/final3_ImgID10.png" />

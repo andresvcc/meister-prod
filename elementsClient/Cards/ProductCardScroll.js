@@ -16,6 +16,8 @@ import styles from './cardStyle';
 
 const useStyles = makeStyles(styles);
 
+const dollarUSLocale = Intl.NumberFormat('en-US');
+
 export default function CardProfile(props) {
   const {
     product, addToBag, tva, alReadyInBag = () => false, ...rest
@@ -107,17 +109,23 @@ export default function CardProfile(props) {
             </Div>
           </GridItem>
 
-          <GridItem num={[5, 5, 5, 5, 5]}>
-            <Div horizontal="left" width="100%">
-              <h5 className={classes.cardProductPrice}>
-                <Typography type="cardProduct">
-                  {`${localCurrency} ${priceOptions}`}
-                </Typography>
-              </h5>
-            </Div>
+          <GridItem num={[7, 7, 7, 7, 7]}>
+            <div
+              style={{
+                paddingLeft: '5px', display: 'flex', width: '100%', flexDirection: 'row', alingItems: 'flex-start', justifyContents: 'flex-start'
+              }}
+            >
+              <Typography type="cardProduct">
+                {`${localCurrency}`}
+              </Typography>
+              &nbsp;
+              <Typography type="cardProductPrice">
+                {`${dollarUSLocale.format(priceOptions)}`}
+              </Typography>
+            </div>
           </GridItem>
 
-          <GridItem num={[7, 7, 7, 7, 7]}>
+          <GridItem num={[5, 5, 5, 5, 5]}>
 
             {product.sizesType.split(',').length < 5 ? (
               <Div width="100%" height="100%">

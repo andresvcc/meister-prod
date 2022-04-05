@@ -24,7 +24,9 @@ class MyDocument extends Document {
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-          <meta name="google-site-verification" content="rRhTsfx7uZkYI0m0Xf4OiiImfhNPxYDCAUQTGVpbdsk" />
+          {
+            process.env.NODE_ENV === 'development' ? <meta name="google-site-verification" content="YouddSL-RhhvC0uIG5VPxgDqqDJJqLK0lkLMt_5d5EU" /> : <meta name="google-site-verification" content="qkXbIILWesIQHvQTLbEZfb-XVNWJ_JlqXiDHb0eXLaQ" />
+          }
           {/* TIP: set viewport head meta tag in _app.js, otherwise it will show a warning */}
           <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
           <link rel="manifest" href="/manifest.json" />

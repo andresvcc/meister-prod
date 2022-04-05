@@ -6,7 +6,7 @@
     "preinstall": "npx npm-force-resolutions",
     "lint": "next lint",
     "fix-js": "eslint-auto-fix",
-    "dev": "cross-env NEXTAUTH_URL=https://devmeister.andrescaballero.ch nodemon -w server.js server.js",
+    "dev": "cross-env NEXTAUTH_URL=https://dev.andrescaballero.ch node server.js",
     "dt": "pm2 start npm --name \"devMeister\" -- run dev",
     "build": "cross-env NODE_ENV=production next build",
     "start": "cross-env NODE_ENV=production node server.js",

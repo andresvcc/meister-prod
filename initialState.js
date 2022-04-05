@@ -17,7 +17,7 @@ export default {
   ],
   JournalItems,
   currencyRates: {
-    USD: 1, CHF: 0.92, EUR: 0.84, GBP: 0.72
+    USD: 1, CHF: 0.92, EUR: 0.91, GBP: 0.72, RUB: 83.75, CAD: 1.25, SEK: 9.43, HUF: 336.54, SAR: 3.75, INR: 75.48, CZK: 22.19
   },
   localCurrency: 'USD',
   curentLanguage: 'EN',

@@ -44,7 +44,7 @@ module.exports = withPlugins([
 ], {
   // webpack5: false,
   images: {
-    domains: ['devmeister.andrescaballero.ch'],
+    domains: ['meister-engineering.ch'],
   },
   compiler: {
     removeConsole: {
@@ -62,6 +62,6 @@ module.exports = withPlugins([
   env: {
     ROOT: __dirname,
     NEXT_PUBLIC_GOOGLE_ANALYTICS: 'G-DJ6Q9WZ60R',
-    IMAGEPROVIDER: 'https://devmeister.andrescaballero.ch'
+    IMAGEPROVIDER: 'https://meister-engineering.ch'
   }
 });

@@ -50,7 +50,7 @@ function Page(props) {
   const { articlesJournal = { list: {} } } = stateRedux;
   const { list } = articlesJournal;
 
-  const article = React.useMemo(() => list[router.query.journal], [list]);
+  const article = React.useMemo(() => list[router.query.journal], [list[router.query.journal]]);
 
   if (!article) {
     return (

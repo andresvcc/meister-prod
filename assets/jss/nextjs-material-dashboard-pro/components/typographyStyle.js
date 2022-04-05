@@ -660,10 +660,6 @@ const typographyStyle = (theme) => ({
     fontFamily: 'NovaBold, sans serif',
     fontSize: '20px',
   },
-  testTypo2: {
-    fontFamily: 'GorgiaBold',
-    fontSize: '20px',
-  },
   testTypo3: {
     fontFamily: 'NovaLight, sans serif',
     fontSize: '18px',
@@ -715,6 +711,13 @@ const typographyStyle = (theme) => ({
   },
   cardProduct: {
     fontFamily: 'Georgia',
+    fontWeight: '50',
+    fontSize: '15px',
+    color: 'black',
+    textTransform: 'capitalize'
+  },
+  cardProductPrice: {
+    fontFamily: 'Ubuntu, sans-serif',
     fontWeight: '50',
     fontSize: '15px',
     color: 'black',

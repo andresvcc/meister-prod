@@ -364,6 +364,7 @@ function Pilot(props) {
   };
 
   const productsPilot = React.useMemo(() => Object.values(productList).filter((val) => val.visibility === true && val.hidden === false && val.categorie === 'Pilot').map((val) => ({ ...val, price: calcPrice(val) })), [productList, localCurrency, tva]);
+
   const productDemultiplexed = React.useMemo(() => [...productsPilot.map((productRoot) => productRoot.colors.map((color, i) => ({
     ...productRoot,
     colors: [color],

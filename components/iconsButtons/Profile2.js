@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 // Header - profil - Desktop
 import React, { useState, useEffect, useRef } from 'react';
-import GoogleLogin from 'react-google-login';
+import GoogleLogin, { GoogleLogout } from 'react-google-login';
 import useMouseLeave from 'use-mouse-leave';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
@@ -200,6 +200,9 @@ export default function BagCardDialog(props) {
       if (socialLogin?.provider === 'facebook') {
         window.FB.logout();
       }
+      if (socialLogin?.provider === 'google') {
+        console.log('logout google');
+      }
       emit('logout', {
         countryTVA, language, currency, tva
       });
@@ -262,6 +265,8 @@ export default function BagCardDialog(props) {
   };
 
   const loginGoogle = (googleUser) => {
+    console.log('googleUser', googleUser);
+
     const user = {
       accessToken: googleUser.accessToken,
       data_access_expiration_time: googleUser.tokenObj.expires_at,
@@ -446,7 +451,7 @@ export default function BagCardDialog(props) {
                 <SocialButton title="Continue with Facebook" image={facebookIcon} onClick={loginFacebook} />
 
                 <GoogleLogin
-                  clientId="52138817195-8h3925qg2rffhl8j6sl8uvbdsi32m762.apps.googleusercontent.com"
+                  clientId="134611809717-cnvv6nvp4flf8rg5i5sl1irjees9vud0.apps.googleusercontent.com"
                   buttonText="Login"
                   onSuccess={loginGoogle}
                   onFailure={(a) => console.log('GOOGLE ERROR', a)}
@@ -459,7 +464,7 @@ export default function BagCardDialog(props) {
                 {/*
                   <GoogleSocialLogin
                     provider="google"
-                    appId="52138817195-8h3925qg2rffhl8j6sl8uvbdsi32m762.apps.googleusercontent.com"
+                    appId="134611809717-cnvv6nvp4flf8rg5i5sl1irjees9vud0.apps.googleusercontent.com"
                     onLoginSuccess={loginGoogle}
                     onLoginFailure={(a) => console.log('asd', a)}
                   />

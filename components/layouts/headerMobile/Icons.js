@@ -5,6 +5,7 @@ import { redux } from 'component';
 import axios from 'axios';
 import CurrencyMobile from '@/components/iconsButtons/CurrencyMobile';
 import ProfilMobile from '@/components/iconsButtons/profilMobile';
+import Currency from '@/components/iconsButtons/Currency';
 import Profile from '@/components/iconsButtons/Profile2';
 import CartMobile from '@/components/iconsButtons/CartMobile';
 import Country from '@/components/iconsButtons/Country';
@@ -61,6 +62,7 @@ const Icons = memo(({ useSocketHook }) => {
       }}
     >
       <CurrencyMobile country={country} />
+      <Currency />
       <ProfilMobile useSocketHook={useSocketHook} socialLogin={socialLogin} setSocialLogin={setSocialLogin} />
       <CartMobile />
     </div>

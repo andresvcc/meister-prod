@@ -54,6 +54,7 @@ const Icons = memo(({ useSocketHook }) => {
   return (
     <div className="alignCenterDescktop" style={{ position: 'relative', zIndex: 1, top: -2 }}>
       <Country country={country} />
+      <Currency />
       <Profile useSocketHook={useSocketHook} socialLogin={socialLogin} setSocialLogin={setSocialLogin} />
       <Cart />
     </div>

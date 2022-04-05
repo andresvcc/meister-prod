@@ -73,6 +73,7 @@ const userProfileStyles = {
     cursor: 'pointer',
     minHeight: '230px',
     width: '100%',
+    padding: '0px'
   },
   cardMotorcycle: {
     background: 'transparent',
@@ -83,7 +84,7 @@ const userProfileStyles = {
 
   },
   bodyCardProduct: {
-    padding: '0 20px 0px 20px',
+    padding: '0 5px 0px 5px',
     cursor: 'pointer',
     width: '100%',
     // heigth: 'auto',

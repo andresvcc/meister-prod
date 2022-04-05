@@ -784,7 +784,7 @@ select:-webkit-autofill:focus {
   position: relative;
   background: #ffffff;
   border: 1px solid #979595;
-  margin-top: 5px;
+  margin-top: 14px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -799,13 +799,13 @@ select:-webkit-autofill:focus {
   content: '';
   position: absolute;
   top: -28.5px;
-  left: 40%;
+  right: 92px;
   border: 14px solid transparent;
   border-bottom-color: #979595;
 }
 
 .dialogContaineCurrency:after {
-  left: 40%;
+  right: 92px;
   top: -27px;
   border: 14px solid transparent;
   border-bottom-color: #ffffff;

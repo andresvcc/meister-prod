@@ -72,10 +72,10 @@ export default function CartBt(props) {
 
   const dropdownItem = classNames(classes.dropdownItem, classes.primaryHover);
 
-  const options = ['USD', 'CHF', 'EUR', 'GBP'];
+  const options = ['USD', 'CHF', 'EUR', 'GBP', 'SUB'];
 
   return (
-    <Div width="100%" onHover={(a) => { if (a === false) handleCloseNotification(); }}>
+    <Div width="100%" onHover={(a) => { if (a === false) handleCloseNotification(); }} style={{ display: 'none' }}>
       <Button
         color="transparent"
         justIcon
