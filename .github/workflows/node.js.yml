@@ -29,3 +29,6 @@ jobs:
           npm install --global yarn
           yarn install
           yarn run build
+          yarn global add pm2
+          pm2 list
+          pm2 reload all
