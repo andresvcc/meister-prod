@@ -7,22 +7,21 @@ on:
     branches: [master, main]
     
 jobs: 
-  job_one:
+  build:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: testing omgeering.com server ssh connection
+      - uses: actions/checkout@v1
+      - name: Copy repository contents via scp
         uses: appleboy/ssh-action@master
-        with:
-          host: l095r_admin@l095r.ftp.infomaniak.com
-          key: ${{ secrets.OMG_SECRET }}
-          port: 22
+        env:
+          HOST: l095r.ftp.infomaniak.com
+          USERNAME: l095r_andres
+          PORT: 22
+          KEY: ${{ secrets.OMG_SECRET }}
           script: |
             cd meister-prod
             git pull origin master
             git status
             yarn install
-            yarn run build
-            
-          
-          
+            yarn run build          
