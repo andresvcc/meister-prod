@@ -21,6 +21,8 @@ jobs:
             cd meister-prod
             git pull origin master
             git status
+            yarn install
+            yarn run build
             
           
           
