@@ -1,0 +1,26 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Deployment Workflow
+on: 
+  push: 
+    branches: [master]
+    
+jobs: 
+  job_one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing omgeering.com server ssh connection
+        uses: appleboy/ssh-action@master
+        with:
+          host: 202.61.250.37@meister
+          key: ${{ secrets.OMG_SECRET }}
+          port: 22
+          script: |
+            cd meister-prod
+            git pull origin master
+            git status
+            
+          
+          
