@@ -14,7 +14,7 @@ jobs:
       - name: testing omgeering.com server ssh connection
         uses: appleboy/ssh-action@master
         with:
-          host: 202.61.250.37@meister
+          host: l095r_admin@l095r.ftp.infomaniak.com
           key: ${{ secrets.OMG_SECRET }}
           port: 22
           script: |
