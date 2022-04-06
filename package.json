@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "lint": "next lint",
     "fix-js": "eslint-auto-fix",
     "dev": "cross-env NEXTAUTH_URL=https://dev.andrescaballero.ch node server.js",
