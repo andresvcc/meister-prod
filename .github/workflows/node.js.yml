@@ -11,17 +11,10 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Copy repository contents via scp
-        uses: appleboy/ssh-action@master
-        env:
+      - uses: D3rHase/ssh-command-action@v0.2
+      - name: connect
+        with:
           HOST: l095r.ftp.infomaniak.com
-          USERNAME: l095r_andres
-          PORT: 22
-          KEY: ${{ secrets.OMG_SECRET }}
-          script: |
-            cd meister-prod
-            git pull origin master
-            git status
-            yarn install
-            yarn run build          
+          USER: l095r_andres
+          PRIVATE_SSH_KEY: ${{ secrets.OMG_SECRET }}
+          PASSWORD: ${{ secrets.PASSWORD }}    
