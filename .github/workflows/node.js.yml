@@ -30,8 +30,7 @@ jobs:
           nvm use 14.18.2
           node -v
           npm install --global yarn
-          yarn install
+          yarn install --frozen-lockfile
           yarn run build
           yarn global add pm2
           pm2 list
-          pm2 reload all
