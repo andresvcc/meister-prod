@@ -26,3 +26,6 @@ jobs:
           nvm install 14.18.2
           nvm use 14.18.2
           node -v
+          npm install --global yarn
+          yarn install
+          yarn run build
